@@ -2,6 +2,7 @@
 
 define( function ( require ) {
 
+    require( 'common/CommonModule' );
     require( 'sessions/SessionsModule' );
     require( 'users/UsersModule' );
 
@@ -10,6 +11,7 @@ define( function ( require ) {
             'pascalprecht.translate',
             'tmh.dynamicLocale',
             'ui.router',
+            'CommonModule',
             'SessionsModule',
             'UsersModule'
         ]);
@@ -26,14 +28,19 @@ define( function ( require ) {
         tmhDynamicLocaleProvider.localeLocationPattern( 'bower_components/angular-i18n/angular-locale_{{locale}}.js' );
     }]);
 
-    app.constant( 'LOCALE', {
+    app.constant( 'LOCALES', {
+        'locales'           : {
+            'en_us' : 'en',
+            'es_mx' : 'es'
+        },
         'preferredLocale'   : 'en_us'
     });
 
-    app.run([ '$rootScope', '$state', function ( $rootScope, $state ) {
+    app.run([ '$rootScope', '$state', 'LocaleService', function ( $rootScope, $state, LocaleService ) {
         $state.go( 'login' );
 
-        $rootScope.$state   = $state;
+        $rootScope.$state       = $state;
+        $rootScope.$translation = LocaleService;
     }]);
 
     return app;
