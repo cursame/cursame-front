@@ -1,0 +1,9 @@
+{
+    "sessions.start.login"          : "Log in",
+    "forms.button.login"            : "Log In",
+    "forms.label.email"             : "Email",
+    "forms.label.password"          : "Password",
+    "forms.label.remember"          : "Remember me",
+    "forms.placeholder.email"       : "Email",
+    "forms.placeholder.password"    : "Password"
+}

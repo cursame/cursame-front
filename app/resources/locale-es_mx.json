@@ -1,0 +1,9 @@
+{
+    "sessions.start.login"          : "Iniciar sesión",
+    "forms.button.login"            : "Iniciar Sesión",
+    "forms.label.email"             : "Correo electrónico",
+    "forms.label.password"          : "Contraseña",
+    "forms.label.remember"          : "Recordarme",
+    "forms.placeholder.email"       : "Correo electrónico",
+    "forms.placeholder.password"    : "Contraseña"
+}
