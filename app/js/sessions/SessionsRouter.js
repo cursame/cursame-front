@@ -4,9 +4,10 @@ define( function () {
     return function ( $stateProvider ) {
         $stateProvider
             .state( 'login', {
+                parent  : 'forms',
                 url     : 'login',
                 views   : {
-                    'main-view'     : {
+                    'form'          : {
                         templateUrl : 'partials/sessions/start.html',
                         controller  : 'SessionsStartCtrl'
                     }

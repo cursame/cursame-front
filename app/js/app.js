@@ -13,6 +13,8 @@ define( function ( require ) {
 
     app.run([ '$rootScope', '$state', function ( $rootScope, $state ) {
         $state.go( 'login' );
+
+        $rootScope.$state   = $state;
     }]);
 
     return app;
