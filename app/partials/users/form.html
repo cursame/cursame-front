@@ -9,11 +9,11 @@
                 </div>
                 <div ui-view="form"></div>
                 <div class="form-footer">
-                    <p ng-if="$state.is('retrieve_pass') || $state.is('send_instructions')"><a ui-sref="login">Already an user? Log in</a></p>
-                    <p ng-if="$state.is('retrieve_pass') || $state.is('send_instructions')"><a ui-sref="register">Not an user? Register</a></p>
+                    <p ng-if="$state.is('retrieve_pass') || $state.is('send_instructions') || $state.is('unblock_instructions')"><a ui-sref="login">Already an user? Log in</a></p>
+                    <p ng-if="$state.is('retrieve_pass') || $state.is('send_instructions') || $state.is('unblock_instructions')"><a ui-sref="register">Not an user? Register</a></p>
                     <p ng-if="!$state.is('retrieve_pass') || $state.is('send_instructions')"><a ui-sref="retrieve_pass">Forgot your password?</a></p>
-                    <p ng-if="!$state.is('send_instructions')"><a ui-sref="send_instructions">Didn't get the confirmation instructions?</a></p>
-                    <p><a>Didn't get the unblocking instructions?</a></p>
+                    <p ng-if="!$state.is('send_instructions') || $state.is('unblock_instructions')"><a ui-sref="send_instructions">Didn't get the confirmation instructions?</a></p>
+                    <p ng-if="!$state.is('unblock_instructions')"><a ui-sref="unblock_instructions">Didn't get the unblocking instructions?</a></p>
                 </div>
             </div>
         </div>

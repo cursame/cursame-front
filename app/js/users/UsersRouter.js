@@ -37,6 +37,15 @@ define( function () {
                         templateUrl : 'partials/users/send_instructions.html'
                     }
                 }
+            })
+            .state( 'unblock_instructions', {
+                parent  : 'forms',
+                url     : 'unblock-instructions',
+                views   : {
+                    'form'          : {
+                        templateUrl : 'partials/users/unblock_instructions.html'
+                    }
+                }
             });
     };
 });
