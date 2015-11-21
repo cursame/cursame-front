@@ -19,6 +19,15 @@ define( function () {
                         templateUrl : 'partials/users/register.html'
                     }
                 }
+            })
+            .state( 'retrieve_pass', {
+                parent  : 'forms',
+                url     : 'retrieve-pass',
+                views   : {
+                    'form'          : {
+                        templateUrl : 'partials/users/retrieve_pass.html'
+                    }
+                }
             });
     };
 });

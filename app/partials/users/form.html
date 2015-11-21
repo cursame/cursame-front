@@ -8,7 +8,9 @@
                 </div>
                 <div ui-view="form"></div>
                 <div class="form-footer">
-                    <p><a>Forget your password?</a></p>
+                    <p ng-if="$state.is('retrieve_pass')"><a ui-sref="login">Already an user? Log in</a></p>
+                    <p ng-if="$state.is('retrieve_pass')"><a ui-sref="register">Not an user? Register</a></p>
+                    <p ng-if="!$state.is('retrieve_pass')"><a ui-sref="retrieve_pass">Forgot your password?</a></p>
                     <p><a>Didn't get the confirmation instructions?</a></p>
                     <p><a>Didn't get the unblocking instructions?</a></p>
                 </div>
