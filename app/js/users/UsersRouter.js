@@ -28,6 +28,15 @@ define( function () {
                         templateUrl : 'partials/users/retrieve_pass.html'
                     }
                 }
+            })
+            .state( 'send_instructions', {
+                parent  : 'forms',
+                url     : 'send-instructions',
+                views   : {
+                    'form'          : {
+                        templateUrl : 'partials/users/send_instructions.html'
+                    }
+                }
             });
     };
 });
