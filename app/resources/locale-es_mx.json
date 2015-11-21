@@ -1,9 +1,19 @@
 {
-    "sessions.start.login"          : "Iniciar sesión",
-    "forms.button.login"            : "Iniciar Sesión",
-    "forms.label.email"             : "Correo electrónico",
-    "forms.label.password"          : "Contraseña",
-    "forms.label.remember"          : "Recordarme",
-    "forms.placeholder.email"       : "Correo electrónico",
-    "forms.placeholder.password"    : "Contraseña"
+    "forms.button.login"                    : "Iniciar sesión",
+    "forms.button.register"                 : "Registrarme",
+    "forms.label.accept"                    : "Acepto",
+    "forms.label.email"                     : "Correo electrónico",
+    "forms.label.last_name"                 : "Apellido(s)",
+    "forms.label.name"                      : "Nombre(s)",
+    "forms.label.password"                  : "Contraseña",
+    "forms.label.remember"                  : "Recordarme",
+    "forms.label.repeat_password"           : "Repetir contraseña",
+    "forms.label.terms_and_conditions"      : "términos y condiciones",
+    "forms.placeholder.email"               : "Correo electrónico",
+    "forms.placeholder.last_name"           : "Apellido(s)",
+    "forms.placeholder.name"                : "Nombre(s)",
+    "forms.placeholder.password"            : "Contraseña",
+    "forms.placeholder.repeat_password"     : "Repetir contraseña",
+    "sessions.start.login"                  : "Iniciar sesión",
+    "users.register"                        : "Regístrate alumno"
 }
