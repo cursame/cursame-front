@@ -71,6 +71,7 @@ module.exports  = function ( grunt ) {
                         '.htaccess',
                         '*.html',
                         'partials/{,*/}*.html',
+                        'resources/{,*/}*.json',
                         'img/{,*/}*.{webp}',
                         'css/{,*/}*.css',
                         'data/{,*/}*.*',
@@ -319,7 +320,8 @@ module.exports  = function ( grunt ) {
                 },
                 files   : [
                     '<%= config.app %>/{,*/}*.html',
-                    '<%= config.app %>/partials/{,*/}*.html'
+                    '<%= config.app %>/partials/{,*/}*.html',
+                    '<%= config.app %>/resources/{,*/}*.json'
                 ]
             }
         },
