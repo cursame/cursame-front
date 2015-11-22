@@ -3,6 +3,7 @@
     "forms.button.register"                 : "Register",
     "forms.button.resend_instructions"      : "Resend Instructions",
     "forms.button.retrieve_pass"            : "Retrive Password",
+    "forms.button.send_instructions"        : "Send Instructions",
     "forms.label.accept"                    : "Accept",
     "forms.label.email"                     : "Email",
     "forms.label.last_name"                 : "Last Name",
@@ -13,6 +14,8 @@
     "forms.label.retrieve_title"            : "Retrieve your password",
     "forms.label.retrieve"                  : "Enter the email that you register with and press the \"activate password\" button.",
     "forms.label.terms_and_conditions"      : "terms and conditions",
+    "forms.label.unblock_title"             : "Haven't received your unblocking instructions?",
+    "forms.label.unblock"                   : "Enter your email to follow-up your request.",
     "sessions.start.login"                  : "Log in",
     "users.register"                        : "Register"
 }
