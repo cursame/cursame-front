@@ -1,16 +1,16 @@
 <form>
-    <h4>Retrieve your password</h4>
-    <p>Enter the email that you register with and press the "activate password" button.</p>
+    <h4>{{ 'forms.label.retrieve_title' | translate }}</h4>
+    <p>{{ 'forms.label.retrieve' | translate }}</p>
     <div class="form-group">
-        <label for="email" class="sr-only">Email</label>
+        <label for="email" class="sr-only">{{ 'forms.label.email' | translate }}</label>
         <div class="input-group">
             <div class="input-group-addon"><span class="icon icon-mail"></span></div>
-            <input type="email" name="email" class="form-control" id="user-email" placeholder="Email">
+            <input type="email" name="email" class="form-control" id="user-email" placeholder="{{ 'forms.label.email' | translate }}">
         </div>
     </div>
     <div class="row">
         <div class="col-lg-2 col-md-2 col-sm-4 col-xs-6 col-lg-offset-10 col-md-offset-10 col-sm-offset-8 col-xs-offset-6">
-            <button type="submit" class="btn btn-primary pull-right">Retrieve Password</button>
+            <button type="submit" class="btn btn-primary pull-right">{{ 'forms.button.retrieve_pass' | translate }}</button>
         </div>
     </div>
 </form>

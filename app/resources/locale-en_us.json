@@ -1,6 +1,7 @@
 {
     "forms.button.login"                    : "Log In",
     "forms.button.register"                 : "Register",
+    "forms.button.retrieve_pass"            : "Retrive Password",
     "forms.label.accept"                    : "Accept",
     "forms.label.email"                     : "Email",
     "forms.label.last_name"                 : "Last Name",
@@ -8,6 +9,8 @@
     "forms.label.password"                  : "Password",
     "forms.label.remember"                  : "Remember me",
     "forms.label.repeat_password"           : "Repeat password",
+    "forms.label.retrieve_title"            : "Retrieve your password",
+    "forms.label.retrieve"                  : "Enter the email that you register with and press the \"activate password\" button.",
     "forms.label.terms_and_conditions"      : "terms and conditions",
     "sessions.start.login"                  : "Log in",
     "users.register"                        : "Register"
