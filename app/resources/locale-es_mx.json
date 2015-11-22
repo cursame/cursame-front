@@ -9,11 +9,6 @@
     "forms.label.remember"                  : "Recordarme",
     "forms.label.repeat_password"           : "Repetir contraseña",
     "forms.label.terms_and_conditions"      : "términos y condiciones",
-    "forms.placeholder.email"               : "Correo electrónico",
-    "forms.placeholder.last_name"           : "Apellido(s)",
-    "forms.placeholder.name"                : "Nombre(s)",
-    "forms.placeholder.password"            : "Contraseña",
-    "forms.placeholder.repeat_password"     : "Repetir contraseña",
     "sessions.start.login"                  : "Iniciar sesión",
     "users.register"                        : "Regístrate alumno"
 }

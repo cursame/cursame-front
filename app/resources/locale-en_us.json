@@ -9,11 +9,6 @@
     "forms.label.remember"                  : "Remember me",
     "forms.label.repeat_password"           : "Repeat password",
     "forms.label.terms_and_conditions"      : "terms and conditions",
-    "forms.placeholder.email"               : "Email",
-    "forms.placeholder.last_name"           : "Last Name",
-    "forms.placeholder.name"                : "Name(s)",
-    "forms.placeholder.password"            : "Password",
-    "forms.placeholder.repeat_password"     : "Repeat password",
     "sessions.start.login"                  : "Log in",
     "users.register"                        : "Register"
 }
