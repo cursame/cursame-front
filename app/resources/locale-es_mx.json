@@ -1,6 +1,7 @@
 {
     "forms.button.login"                    : "Iniciar sesión",
     "forms.button.register"                 : "Registrarme",
+    "forms.button.resend_instructions"      : "Reenviar Instrucciones",
     "forms.button.retrieve_pass"            : "Recuperar Contraseña",
     "forms.label.accept"                    : "Acepto",
     "forms.label.email"                     : "Correo electrónico",

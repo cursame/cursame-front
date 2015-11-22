@@ -1,6 +1,7 @@
 {
     "forms.button.login"                    : "Log In",
     "forms.button.register"                 : "Register",
+    "forms.button.resend_instructions"      : "Resend Instructions",
     "forms.button.retrieve_pass"            : "Retrive Password",
     "forms.label.accept"                    : "Accept",
     "forms.label.email"                     : "Email",
