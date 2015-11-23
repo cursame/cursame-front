@@ -1,17 +1,17 @@
-<form>
+<form ng-submit="login()">
     <h4>{{ 'sessions.start.login' | translate }}</h4>
     <div class="form-group">
         <label for="email" class="sr-only">{{ 'forms.label.email' | translate }}</label>
         <div class="input-group">
             <div class="input-group-addon"><span class="icon icon-mail"></span></div>
-            <input type="email" name="email" class="form-control" id="user-email" placeholder="{{ 'forms.label.email' | translate }}">
+            <input type="email" name="email" class="form-control" id="user-email" placeholder="{{ 'forms.label.email' | translate }}" ng-model="user.email">
         </div>
     </div>
     <div class="form-group">
         <label for="password" class="sr-only">{{ 'forms.label.password' | translate }}</label>
         <div class="input-group">
             <div class="input-group-addon"><span class="icon icon-key"></span></div>
-            <input type="password" name="password" class="form-control" id="user-password" placeholder="{{ 'forms.label.password' | translate }}">
+            <input type="password" name="password" class="form-control" id="user-password" placeholder="{{ 'forms.label.password' | translate }}" ng-model="user.pass">
         </div>
     </div>
     <div class="row">

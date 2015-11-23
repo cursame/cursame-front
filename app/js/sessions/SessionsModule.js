@@ -9,7 +9,7 @@ define( function ( require ) {
 
     SessionsModule.config([ '$stateProvider', SessionsRouter ]);
 
-    SessionsModule.controller( 'SessionsStartCtrl', [ '$scope', SessionsStartCtrl ]);
+    SessionsModule.controller( 'SessionsStartCtrl', [ '$scope', 'events', 'SessionsService', SessionsStartCtrl ]);
 
     SessionsModule.factory( 'SessionsService', [ '$rootScope', '$resource', '$cookies', 'config', 'events', SessionsService ] );
 });
