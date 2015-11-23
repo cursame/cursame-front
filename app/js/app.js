@@ -3,6 +3,7 @@
 define( function ( require ) {
 
     require( 'common/CommonModule' );
+    require( 'mocks/MocksModule' );
     require( 'sessions/SessionsModule' );
     require( 'users/UsersModule' );
 
@@ -12,6 +13,7 @@ define( function ( require ) {
             'tmh.dynamicLocale',
             'ui.router',
             'CommonModule',
+            'MocksModule',
             'SessionsModule',
             'UsersModule'
         ]);
