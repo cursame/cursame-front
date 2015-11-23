@@ -4,6 +4,7 @@ npm-debug.log
 node_modules
 bower_components
 app/css
+app/js/config.js
 dist
 .tmp
 .grunt
