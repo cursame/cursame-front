@@ -4,16 +4,16 @@
             <div id="login-form">
                 <div class="form-header">
                     <a ui-sref="login"><img src="img/logo.png"></a>
-                    <a class="pull-right" ui-sref="register" ng-if="$state.is('login')">Register</a>
-                    <a class="pull-right" ui-sref="login" ng-if="$state.is('register')">Already an user? Log in →</a>
+                    <a class="pull-right" ui-sref="register" ng-if="$state.is('login')">{{ 'base.label.register' | translate }}</a>
+                    <a class="pull-right" ui-sref="login" ng-if="$state.is('register')">{{ 'base.label.already_member' | translate }} →</a>
                 </div>
                 <div ui-view="form"></div>
                 <div class="form-footer">
-                    <p ng-if="$state.is('retrieve_pass') || $state.is('send_instructions') || $state.is('unblock_instructions')"><a ui-sref="login">Already an user? Log in</a></p>
-                    <p ng-if="$state.is('retrieve_pass') || $state.is('send_instructions') || $state.is('unblock_instructions')"><a ui-sref="register">Not an user? Register</a></p>
-                    <p ng-if="!$state.is('retrieve_pass') || $state.is('send_instructions')"><a ui-sref="retrieve_pass">Forgot your password?</a></p>
-                    <p ng-if="!$state.is('send_instructions') || $state.is('unblock_instructions')"><a ui-sref="send_instructions">Didn't get the confirmation instructions?</a></p>
-                    <p ng-if="!$state.is('unblock_instructions')"><a ui-sref="unblock_instructions">Didn't get the unblocking instructions?</a></p>
+                    <p ng-if="$state.is('retrieve_pass') || $state.is('send_instructions') || $state.is('unblock_instructions')"><a ui-sref="login">{{ 'base.label.already_member' | translate }}</a></p>
+                    <p ng-if="$state.is('retrieve_pass') || $state.is('send_instructions') || $state.is('unblock_instructions')"><a ui-sref="register">{{ 'base.label.not_user' | translate }}</a></p>
+                    <p ng-if="!$state.is('retrieve_pass') || $state.is('send_instructions')"><a ui-sref="retrieve_pass">{{ 'base.label.forgot_password' | translate }}</a></p>
+                    <p ng-if="!$state.is('send_instructions') || $state.is('unblock_instructions')"><a ui-sref="send_instructions">{{ 'base.label.confirmation_instructions' | translate }}</a></p>
+                    <p ng-if="!$state.is('unblock_instructions')"><a ui-sref="unblock_instructions">{{ 'base.label.unblocking_instructions' | translate }}</a></p>
                 </div>
             </div>
         </div>

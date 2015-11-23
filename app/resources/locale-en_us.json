@@ -1,4 +1,10 @@
 {
+    "base.label.already_member"             : "Already an user? Log in",
+    "base.label.confirmation_instructions"  : "Didn't get the confirmation instructions?",
+    "base.label.forgot_password"            : "Forgot your password?",
+    "base.label.not_user"                   : "Not an user? Register",
+    "base.label.register"                   : "Register",
+    "base.label.unblocking_instructions"    : "Didn't get the unblocking instructions?",
     "forms.button.login"                    : "Log In",
     "forms.button.register"                 : "Register",
     "forms.button.resend_instructions"      : "Resend Instructions",
