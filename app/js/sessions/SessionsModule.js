@@ -2,6 +2,7 @@
 
 define( function ( require ) {
     var SessionsRouter      = require( 'sessions/SessionsRouter' );
+    var SessionsService     = require( 'sessions/SessionsService' );
     var SessionsStartCtrl   = require( 'sessions/SessionsStartCtrl' );
 
     var SessionsModule      = angular.module( 'SessionsModule', []);
@@ -9,4 +10,6 @@ define( function ( require ) {
     SessionsModule.config([ '$stateProvider', SessionsRouter ]);
 
     SessionsModule.controller( 'SessionsStartCtrl', [ '$scope', SessionsStartCtrl ]);
+
+    SessionsModule.factory( 'SessionsService', [ '$rootScope', '$resource', '$cookies', 'config', 'events', SessionsService ] );
 });
