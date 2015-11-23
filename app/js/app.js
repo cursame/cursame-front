@@ -2,6 +2,8 @@
 
 define( function ( require ) {
 
+    require( 'config' );
+    require( 'events' );
     require( 'common/CommonModule' );
     require( 'mocks/MocksModule' );
     require( 'sessions/SessionsModule' );
@@ -9,9 +11,12 @@ define( function ( require ) {
 
     var app     = angular.module( 'cursame-front', [
             'ngCookies',
+            'ngResource',
             'pascalprecht.translate',
             'tmh.dynamicLocale',
             'ui.router',
+            'config',
+            'events',
             'CommonModule',
             'MocksModule',
             'SessionsModule',
