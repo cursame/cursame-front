@@ -7,6 +7,7 @@ define( function () {
             'LOGIN_SUCCESS'     : 'login.success',
             'LOGIN_ERROR'       : 'login.error',
             'LOGOUT_SUCCESS'    : 'logout.success',
-            'LOGOUT_ERROR'      : 'logout.error'
+            'LOGOUT_ERROR'      : 'logout.error',
+            'SYSTEM_MESSAGE'    : 'system_message'
         });
 });

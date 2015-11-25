@@ -8,6 +8,19 @@
 html, body                      { height: 100%; }
 
 /*****************************
+    NOTIFICATION STYLES
+*****************************/
+#system-notification                        { width: 100%; position: absolute; top: 0; z-index: 10000; }
+.notification-container                     { display: none; height: 50px; }
+.notification                               { border-radius: 0 0 5px 5px; border: 1px solid; border-top: none; position: relative; }
+.notification p                             { line-height: 50px; margin-bottom: 0; float: left; }
+.notification span                          { font-size: 16px; line-height: 50px; cursor: pointer; float: right; }
+.notification.success                       { background-color: #dff0d8; border-color: #d6e9c6; color: #3c763d; }
+.notification.info                          { background-color: #d9edf7; border-color: #bce8f1; color: #31708f; }
+.notification.warning                       { background-color: #fcf8e3; border-color: #faebcc; color: #8a6d3b; }
+.notification.error                         { background-color: #f2dede; border-color: #ebccd1; color: #a94442; }
+
+/*****************************
     LOGIN STATE STYLES
 *****************************/
 .login-state                    { background-image: url(https://cursame.s3.amazonaws.com/uploads/network/image_front/343/shutterstock_148509110.jpg); background-position: center center; background-repeat: no-repeat; }
