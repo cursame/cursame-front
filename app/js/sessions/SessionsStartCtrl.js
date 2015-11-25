@@ -9,10 +9,16 @@ define( function () {
         }
 
         $scope.$on( events.LOGIN_SUCCESS, function ( e, data ) {
-            console.log( 'login' );
+            $scope.$emit( events.SYSTEM_MESSAGE, {
+                msg     : 'alerts.error.success',
+                type    : 'success'
+            });
         });
         $scope.$on( events.LOGIN_ERROR, function () {
-            console.log( 'login:error' );
+            $scope.$emit( events.SYSTEM_MESSAGE, {
+                msg     : 'alerts.error.login',
+                type    : 'error'
+            });
         });
     };
 });

@@ -1,4 +1,6 @@
 {
+    "alerts.error.login"                    : "Verifica tus credenciales de acceso e inténtalo de nuevo.",
+    "alerts.error.success"                  : "Sesión iniciada. ¡Bienvenido de nuevo!",
     "base.label.already_member"             : "¿Ya eres miembro? Inicia sesión",
     "base.label.confirmation_instructions"  : "¿No recibiste las instrucciones de confirmación?",
     "base.label.forgot_password"            : "¿Olvidaste tu contraseña?",
