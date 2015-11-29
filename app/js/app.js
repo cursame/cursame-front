@@ -5,6 +5,7 @@ define( function ( require ) {
     require( 'config' );
     require( 'events' );
     require( 'common/CommonModule' );
+    require( 'dashboard/DashboardModule' );
     require( 'mocks/MocksModule' );
     require( 'sessions/SessionsModule' );
     require( 'users/UsersModule' );
@@ -18,6 +19,7 @@ define( function ( require ) {
             'config',
             'events',
             'CommonModule',
+            'DashboardModule',
             'MocksModule',
             'SessionsModule',
             'UsersModule'

@@ -13,6 +13,7 @@ define( function () {
                 msg     : 'alerts.error.success',
                 type    : 'success'
             });
+            $scope.$state.go( 'home' );
         });
         $scope.$on( events.LOGIN_ERROR, function () {
             $scope.$emit( events.SYSTEM_MESSAGE, {
