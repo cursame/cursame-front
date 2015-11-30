@@ -3,10 +3,13 @@
 define( function ( require ) {
     var MocksSessionEnd     = require( 'mocks/MocksSessionEnd' );
     var MocksSessionStart   = require( 'mocks/MocksSessionStart' );
+    var MocksUsersGet       = require( 'mocks/MocksUsersGet' );
 
     return function ( $httpBackend ) {
         $httpBackend.whenPOST( '/sessions' ).respond( MocksSessionStart );
         $httpBackend.whenDELETE( new RegExp( '\\/sessions\\/[0-9]+' ) ).respond( MocksSessionEnd );
+
+        $httpBackend.whenGET( new RegExp( '\\/users\\/[0-9]+' ) ).respond( MocksUsersGet );
 
         $httpBackend.whenGET( /partials/ ).passThrough();
         $httpBackend.whenGET( /resources/ ).passThrough();
