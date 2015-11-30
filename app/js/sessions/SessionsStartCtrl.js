@@ -10,7 +10,7 @@ define( function () {
 
         $scope.$on( events.LOGIN_SUCCESS, function ( e, data ) {
             $scope.$emit( events.SYSTEM_MESSAGE, {
-                msg     : 'alerts.error.success',
+                msg     : 'alerts.login.success',
                 type    : 'success'
             });
             $scope.$state.go( 'home' );

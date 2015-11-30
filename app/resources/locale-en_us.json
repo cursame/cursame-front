@@ -1,6 +1,7 @@
 {
     "alerts.error.login"                    : "Verify your credentials and try again.",
-    "alerts.error.success"                  : "Session started. Welcome back!",
+    "alerts.login.success"                  : "Session started. Welcome back!",
+    "alerts.logout.success"                 : "Your session has been finished.",
     "base.label.already_member"             : "Already an user? Log in",
     "base.label.confirmation_instructions"  : "Didn't get the confirmation instructions?",
     "base.label.forgot_password"            : "Forgot your password?",

@@ -7,9 +7,19 @@ define( function () {
                 parent  : 'forms',
                 url     : 'login',
                 views   : {
-                    'form'          : {
-                        templateUrl : 'partials/sessions/start.html',
-                        controller  : 'SessionsStartCtrl'
+                    'form'              : {
+                        templateUrl     : 'partials/sessions/start.html',
+                        controller      : 'SessionsStartCtrl'
+                    }
+                }
+            })
+            .state( 'logout', {
+                parent  : 'dashboard',
+                url     : 'logout',
+                views   : {
+                    'main-container'    : {
+                        template        : '',
+                        controller      : 'SessionsEndCtrl'
                     }
                 }
             });
