@@ -14,6 +14,11 @@ define( function ( require ) {
                 return ( session ) ? session.token : null;
             },
 
+            getUserId   : function () {
+                var session = $cookies.getObject( 'session' );
+                return ( session ) ? session.user_id : null;
+            },
+
             start       : function ( credentials ) {
                 return this._resource.save( credentials,
                     function ( data ) {
