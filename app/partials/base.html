@@ -1,7 +1,7 @@
 <nav id="main-header" class="navbar navbar-default">
     <div class="container-fluid">
         <div class="navbar-header">
-            <a class="navbar-brand" ui-sref="home">John Doe</a>
+            <a class="navbar-brand" ui-sref="home"><img ng-src="{{ user.avatar }}" alt="{{ user.name }}">{{ user.name }}</a>
         </div>
         <ul class="nav navbar-nav navbar-right">
             <li><a href="">{{ 'main.menu.help' | translate }}</a></li>
