@@ -4,10 +4,18 @@
             <a class="navbar-brand" ui-sref="home"><img ng-src="{{ user.avatar }}" alt="{{ user.name }}">{{ user.name }}</a>
         </div>
         <ul class="nav navbar-nav navbar-right">
-            <li><a href="">{{ 'main.menu.help' | translate }}</a></li>
+            <li><a href="http://myaccount.zendesk.com/account/dropboxes/2830039812" alt="{{ 'main.menu.help' | translate }}" target="_blank"><span class="glyphicon glyphicon-user"></span>{{ 'main.menu.help' | translate }}</a></li>
             <li>
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="glyphicon glyphicon-cog"></span></a>
                 <ul class="dropdown-menu">
+                    <li><a ui-sref="super_administration">{{ 'main.menu.superadmin' | translate }}</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a ui-sref="administration">{{ 'main.menu.admin' | translate }}</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a ui-sref="user_profile">{{ 'main.menu.profile' | translate }}</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a ui-sref="user_edit">{{ 'main.menu.edit_profile' | translate }}</a></li>
+                    <li role="separator" class="divider"></li>
                     <li><a ui-sref="logout">{{ 'main.menu.logout' | translate }}</a></li>
                 </ul>
             </li>
