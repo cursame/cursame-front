@@ -16,7 +16,18 @@
 </nav>
 <div class="container-fluid">
     <div class="row">
-        <div id="main-menu" class="col-lg-3 col-md-3 col-sm-4 col-xs-4"></div>
-        <div id="main-container" class="col-lg-9 col-md-9 col-sm-8 col-xs-8" ui-view="main-container"></div>
+        <div id="main-menu" class="col-lg-2 col-md-2 col-sm-4 col-xs-4">
+            <ul>
+                <li><a ui-sref="home"><span class="glyphicon glyphicon-home"></span>{{ 'main.menu.home' | translate }}</a></li>
+                <li><a ui-sref="activities"><span class="glyphicon glyphicon-check"></span>{{ 'main.menu.activities' | translate }}</a></li>
+                <li><a ui-sref="courses"><span class="glyphicon glyphicon-list"></span>{{ 'main.menu.courses' | translate }}</a></li>
+                <li><a ui-sref="grades"><span class="glyphicon glyphicon-signal"></span>{{ 'main.menu.grades' | translate }}</a></li>
+                <li><a ui-sref="calendar"><span class="glyphicon glyphicon-calendar"></span>{{ 'main.menu.calendar' | translate }}</a></li>
+                <li><a ui-sref="library"><span class="glyphicon glyphicon-book"></span>{{ 'main.menu.library' | translate }}</a></li>
+                <li><a ui-sref="community"><span class="glyphicon glyphicon-user"></span>{{ 'main.menu.community' | translate }}</a></li>
+                <li><a ui-sref="radar"><span class="glyphicon glyphicon-map-marker"></span>{{ 'main.menu.radar' | translate }}</a></li>
+            </ul>
+        </div>
+        <div id="main-container" class="col-lg-10 col-md-10 col-sm-8 col-xs-8" ui-view="main-container"></div>
     </div>
 </div>

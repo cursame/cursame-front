@@ -26,7 +26,15 @@
     "forms.label.unblock_title"             : "Haven't received your unblocking instructions?",
     "forms.label.unblock"                   : "Enter your email to follow-up your request.",
     "main.menu.help"                        : "Help",
+    "main.menu.activities"                  : "Activities",
+    "main.menu.calendar"                    : "Calendar",
+    "main.menu.community"                   : "Community",
+    "main.menu.courses"                     : "Courses",
+    "main.menu.grades"                      : "Grades",
+    "main.menu.home"                        : "Home",
+    "main.menu.library"                     : "Library",
     "main.menu.logout"                      : "Logout",
+    "main.menu.radar"                       : "Radar",
     "sessions.start.login"                  : "Log in",
     "users.register"                        : "Register"
 }

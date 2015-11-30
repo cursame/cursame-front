@@ -25,8 +25,16 @@
     "forms.label.terms_and_conditions"      : "términos y condiciones",
     "forms.label.unblock_title"             : "¿No has recibido las instrucciones de confirmación?",
     "forms.label.unblock"                   : "Ingresa tu correo electrónico para dar seguimiento a tu solicitud.",
+    "main.menu.activities"                  : "Actividades",
+    "main.menu.calendar"                    : "Calendario",
+    "main.menu.community"                   : "Comunidad",
+    "main.menu.courses"                     : "Cursos",
+    "main.menu.grades"                      : "Calificaciones",
+    "main.menu.home"                        : "Inicio",
     "main.menu.help"                        : "Ayuda",
+    "main.menu.library"                     : "Biblioteca",
     "main.menu.logout"                      : "Cerrar sesión",
+    "main.menu.radar"                       : "Radar",
     "sessions.start.login"                  : "Iniciar sesión",
     "users.register"                        : "Regístrate alumno"
 }
