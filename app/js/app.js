@@ -46,10 +46,10 @@ define( function ( require ) {
     });
 
     app.run([ '$rootScope', '$state', 'LocaleService', function ( $rootScope, $state, LocaleService ) {
-        $state.go( 'login' );
-
         $rootScope.$state       = $state;
         $rootScope.$translation = LocaleService;
+
+        $state.go( 'home' );
     }]);
 
     return app;
