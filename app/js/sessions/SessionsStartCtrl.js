@@ -2,8 +2,6 @@
 
 define( function () {
     return function ( $scope, events, Sessions ) {
-        $( 'body' ).addClass( 'login-state' );
-
         $scope.login    = function () {
             Sessions.start( $scope.user );
         }

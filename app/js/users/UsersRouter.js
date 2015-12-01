@@ -7,13 +7,14 @@ define( function () {
                 abstract    : true,
                 views       : {
                     'main-view'     : {
-                        templateUrl : 'partials/users/form.html'
+                        templateUrl : 'partials/users/form.html',
+                        controller  : 'UsersFormCtrl'
                     }
                 }
             })
             .state( 'register', {
                 parent  : 'forms',
-                url     : 'register',
+                url     : '/register',
                 views   : {
                     'form'          : {
                         templateUrl : 'partials/users/register.html'
@@ -22,7 +23,7 @@ define( function () {
             })
             .state( 'retrieve_pass', {
                 parent  : 'forms',
-                url     : 'retrieve-pass',
+                url     : '/retrieve-pass',
                 views   : {
                     'form'          : {
                         templateUrl : 'partials/users/retrieve_pass.html'
@@ -31,7 +32,7 @@ define( function () {
             })
             .state( 'send_instructions', {
                 parent  : 'forms',
-                url     : 'send-instructions',
+                url     : '/send-instructions',
                 views   : {
                     'form'          : {
                         templateUrl : 'partials/users/send_instructions.html'
@@ -40,10 +41,19 @@ define( function () {
             })
             .state( 'unblock_instructions', {
                 parent  : 'forms',
-                url     : 'unblock-instructions',
+                url     : '/unblock-instructions',
                 views   : {
                     'form'          : {
                         templateUrl : 'partials/users/unblock_instructions.html'
+                    }
+                }
+            })
+            .state( 'user_edit', {
+                parent  : 'dashboard',
+                url     : '/user/edit',
+                views   : {
+                    'main-container'    : {
+                        templateUrl     : 'partials/users/edit.html'
                     }
                 }
             });

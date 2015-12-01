@@ -5,7 +5,7 @@ define( function () {
         $stateProvider
             .state( 'login', {
                 parent  : 'forms',
-                url     : 'login',
+                url     : '/login',
                 views   : {
                     'form'              : {
                         templateUrl     : 'partials/sessions/start.html',
@@ -15,7 +15,7 @@ define( function () {
             })
             .state( 'logout', {
                 parent  : 'dashboard',
-                url     : 'logout',
+                url     : '/logout',
                 views   : {
                     'main-container'    : {
                         template        : '',

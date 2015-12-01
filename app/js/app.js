@@ -45,11 +45,13 @@ define( function ( require ) {
         'preferredLocale'   : 'en_us'
     });
 
-    app.run([ '$rootScope', '$state', 'LocaleService', function ( $rootScope, $state, LocaleService ) {
+    app.run([ '$rootScope', '$state', '$location', 'LocaleService', function ( $rootScope, $state, $location, LocaleService ) {
         $rootScope.$state       = $state;
         $rootScope.$translation = LocaleService;
 
-        $state.go( 'home' );
+        if ( $location.url() == '' ) {
+            $state.go( 'home' );
+        }
     }]);
 
     return app;
