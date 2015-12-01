@@ -56,6 +56,16 @@ define( function () {
                         templateUrl     : 'partials/users/edit.html'
                     }
                 }
+            })
+            .state( 'user_profile', {
+                parent  : 'dashboard',
+                url     : '/user/:profile',
+                views   : {
+                    'main-container'    : {
+                        templateUrl     : 'partials/users/profile.html',
+                        controller      : 'UsersProfileCtrl'
+                    }
+                }
             });
     };
 });
