@@ -8,6 +8,7 @@
     "base.label.not_user"                   : "¿Aún no eres miembro? Regístrate",
     "base.label.register"                   : "Regístrate",
     "base.label.unblocking_instructions"    : "¿No recibiste las instrucciones de desbloqueo?",
+    "buttons.edit_profile"                  : "Editar Perfil",
     "forms.button.cancel"                   : "Cancelar",
     "forms.button.login"                    : "Iniciar sesión",
     "forms.button.register"                 : "Registrarme",

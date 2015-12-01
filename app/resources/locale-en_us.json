@@ -8,6 +8,7 @@
     "base.label.not_user"                   : "Not an user? Register",
     "base.label.register"                   : "Register",
     "base.label.unblocking_instructions"    : "Didn't get the unblocking instructions?",
+    "buttons.edit_profile"                  : "Edit Profile",
     "forms.button.cancel"                   : "Cancel",
     "forms.button.login"                    : "Log In",
     "forms.button.register"                 : "Register",

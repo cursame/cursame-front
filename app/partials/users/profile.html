@@ -1,5 +1,10 @@
 <div class="row">
     <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2">
-        <div id="user-banner"></div>
+        <div id="user-banner">
+            <div id="user-avatar">
+                <a ui-sref="user_profile({ profile : user.url })"><img ng-src="{{ user.avatar }}" alt="{{ user.name + ' ' + user.last_name }}"></a>
+            </div>
+            <a class="btn btn-default" ui-sref="user_edit">{{ 'buttons.edit_profile' | translate }}</a>
+        </div>
     </div>
 </div>
