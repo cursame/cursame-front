@@ -6,7 +6,7 @@ define( function () {
             param   = paths[2],
             user    = {},
             users   = [{
-                avatar     : 'https://s3.amazonaws.com/uifaces/faces/twitter/BillSKenney/48.jpg',
+                avatar     : 'https://s3.amazonaws.com/uifaces/faces/twitter/BillSKenney/128.jpg',
                 biography  : '',
                 cover      : 'https://cursame.s3.amazonaws.com/uploads/user/coverphoto/56170.png/234985.jpg',
                 email      : 'admin@cursa.me',
