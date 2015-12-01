@@ -1,0 +1,75 @@
+<div class="row section-header">
+    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2">
+        <h1 class="">Edit Profile</h1>
+    </div>
+</div>
+<div class="row section-body">
+    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2">
+        <form class="form-horizontal">
+            <div class="form-group">
+                <label for="name" class="col-sm-3 control-label">Name:</label>
+                <div class="col-sm-9">
+                    <input type="text" id="name" class="form-control" name="name" placeholder="Name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="last-name" class="col-sm-3 control-label">Last name:</label>
+                <div class="col-sm-9">
+                    <input type="text" id="last-name" class="form-control" name="last-name" placeholder="Last name">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="biography" class="col-sm-3 control-label">Biography:</label>
+                <div class="col-sm-9">
+                    <textarea id="biography" class="form-control" name="biography" rows="4" placeholder="Biography"></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="email" class="col-sm-3 control-label">Email:</label>
+                <div class="col-sm-9">
+                    <input type="email" id="email" class="form-control" name="email" placeholder="Email">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="twitter" class="col-sm-3 control-label">Twitter:</label>
+                <div class="col-sm-9">
+                    <input type="text" id="twitter" class="form-control" name="twitter" placeholder="Example: https://twitter.com/cursame">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="url" class="col-sm-3 control-label">Personalized URL:</label>
+                <div class="col-sm-9">
+                    <div class="input-group">
+                        <span class="input-group-addon"><small>http://cursa.me/users/</small></span>
+                        <input type="text" id="url" class="form-control" name="url" placeholder="">
+                    </div>
+                    <p class="help-block">Remember not to write spaces nor symbols like (¨,:*`^;/ \) since your URL wont be accepted.</p>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="new-pass" class="col-sm-3 control-label">New password:</label>
+                <div class="col-sm-9">
+                    <input type="password" id="new-pass" class="form-control" name="new-pass">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="confirm-pass" class="col-sm-3 control-label">Confirm new password:</label>
+                <div class="col-sm-9">
+                    <input type="password" id="confirm-pass" class="form-control" name="confirm-pass">
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-9 col-sm-offset-3">
+                    <p><small>Do you want to unsubscribe? <a ui-sref="user_cancel">Cancel my account.</a></small></p>
+                </div>
+            </div>
+            <div class="form-buttons">
+                <a ui-sref="home" class="btn btn-default">Cancelar</a>
+                <button type="submit" class="btn btn-primary pull-right">Update profile</button>
+                <div class="col-sm-4 pull-right">
+                    <input type="password" class="form-control" name="pass" placeholder="Type your password to update">
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
