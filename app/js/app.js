@@ -52,6 +52,14 @@ define( function ( require ) {
         if ( $location.url() == '' ) {
             $state.go( 'home' );
         }
+
+        $rootScope.$on( '$locationChangeStart', function () {
+            var search  = $location.search();
+
+            if ( search.lang && ( search.lang == 'es' || search.lang == 'en' ) ) {
+                LocaleService.set( search.lang );
+            }
+        });
     }]);
 
     return app;
