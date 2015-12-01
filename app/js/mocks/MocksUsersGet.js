@@ -9,9 +9,14 @@ define( function () {
 
         switch ( id ) {
             case '1' :
-                user.avatar = 'https://s3.amazonaws.com/uifaces/faces/twitter/BillSKenney/48.jpg',
-                user.id     = 1;
-                user.name   = 'John Doe';
+                user.avatar     = 'https://s3.amazonaws.com/uifaces/faces/twitter/BillSKenney/48.jpg',
+                user.biography  = '';
+                user.email      = 'admin@cursa.me',
+                user.id         = 1;
+                user.last_name  = 'Doe';
+                user.name       = 'John';
+                user.twitter    = '';
+                user.url        = 'jdoe';
                 break;
             default :
                 error       = true;
