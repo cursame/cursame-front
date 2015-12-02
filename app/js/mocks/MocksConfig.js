@@ -1,9 +1,10 @@
 'use strict';
 
 define( function ( require ) {
-    var MocksSessionEnd     = require( 'mocks/MocksSessionEnd' );
-    var MocksSessionStart   = require( 'mocks/MocksSessionStart' );
-    var MocksUsersGet       = require( 'mocks/MocksUsersGet' );
+    var MocksPublicationsQuery  = require( 'mocks/MocksPublicationsQuery' );
+    var MocksSessionEnd         = require( 'mocks/MocksSessionEnd' );
+    var MocksSessionStart       = require( 'mocks/MocksSessionStart' );
+    var MocksUsersGet           = require( 'mocks/MocksUsersGet' );
 
     return function ( $httpBackend ) {
         $httpBackend.whenGET( /partials/ ).passThrough();
@@ -14,5 +15,7 @@ define( function ( require ) {
 
         $httpBackend.whenGET( new RegExp( '\\/users\\/[0-9]+' ) ).respond( MocksUsersGet );
         $httpBackend.whenGET( new RegExp( '\\/users\\/[a-z]+' ) ).respond( MocksUsersGet );
+
+        $httpBackend.whenGET( /\/publications/ ).respond( MocksPublicationsQuery );
     };
 });
