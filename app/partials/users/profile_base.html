@@ -10,9 +10,9 @@
             <h1>{{ user.name + ' ' + user.last_name }}</h1>
             <ul class="user-menu">
                 <li ng-class="{active:$state.is('user_profile')}"><a ui-sref="user_profile({ profile : user.url })">{{ 'users.menu.publications' | translate }}</a></li>
-                <li ng-class="{active:$state.is('user_courses')}"><a ui-sref="user_courses({ url : user.url })">{{ 'users.menu.courses' | translate }}</a></li>
-                <li ng-class="{active:$state.is('user_friends')}"><a ui-sref="user_friends({ url : user.url })">{{ 'users.menu.friends' | translate }}</a></li>
-                <li ng-class="{active:$state.is('user_info')}"><a ui-sref="user_info({ url : user.url })">{{ 'users.menu.information' | translate }}</a></li>
+                <li ng-class="{active:$state.is('user_courses')}"><a ui-sref="user_courses({ profile : user.url })">{{ 'users.menu.courses' | translate }}</a></li>
+                <li ng-class="{active:$state.is('user_friends')}"><a ui-sref="user_friends({ profile : user.url })">{{ 'users.menu.friends' | translate }}</a></li>
+                <li ng-class="{active:$state.is('user_info')}"><a ui-sref="user_info({ profile : user.url })">{{ 'users.menu.information' | translate }}</a></li>
             </ul>
         </div>
         <div id="profile-content" ui-view="profile-content"></div>
