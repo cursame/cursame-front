@@ -7,6 +7,7 @@ define( function ( require ) {
     require( 'common/CommonModule' );
     require( 'dashboard/DashboardModule' );
     require( 'mocks/MocksModule' );
+    require( 'publications/PublicationsModule' );
     require( 'sessions/SessionsModule' );
     require( 'users/UsersModule' );
 
@@ -21,6 +22,7 @@ define( function ( require ) {
             'CommonModule',
             'DashboardModule',
             'MocksModule',
+            'PublicationsModule',
             'SessionsModule',
             'UsersModule'
         ]);
