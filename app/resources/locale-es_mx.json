@@ -11,6 +11,7 @@
     "buttons.edit_profile"                  : "Editar Perfil",
     "forms.button.cancel"                   : "Cancelar",
     "forms.button.comment"                  : "Comentar",
+    "forms.button.file"                     : "Archivo",
     "forms.button.login"                    : "Iniciar sesión",
     "forms.button.register"                 : "Registrarme",
     "forms.button.resend_instructions"      : "Reenviar Instrucciones",

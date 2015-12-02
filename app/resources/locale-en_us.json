@@ -11,6 +11,7 @@
     "buttons.edit_profile"                  : "Edit Profile",
     "forms.button.cancel"                   : "Cancel",
     "forms.button.comment"                  : "Comment",
+    "forms.button.file"                     : "File",
     "forms.button.login"                    : "Log In",
     "forms.button.register"                 : "Register",
     "forms.button.resend_instructions"      : "Resend Instructions",
