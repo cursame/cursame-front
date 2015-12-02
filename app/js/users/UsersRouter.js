@@ -72,7 +72,8 @@ define( function () {
                 url         : '/user/:profile',
                 views       : {
                     'profile-content'   : {
-                        templateUrl     : 'partials/users/publish.html'
+                        templateUrl     : 'partials/users/publish.html',
+                        controller      : 'UsersPublicationsCtrl'
                     }
                 }
             })
