@@ -12,7 +12,7 @@ define( function ( require ) {
 
     UsersModule.controller( 'UsersFormCtrl', [ UsersFormCtrl ] );
 
-    UsersModule.controller( 'UsersProfileCtrl', [ '$scope', '$stateParams', 'events', 'UsersService', UsersProfileCtrl ] );
+    UsersModule.controller( 'UsersProfileCtrl', [ '$scope', '$state', 'events', 'UsersService', UsersProfileCtrl ] );
 
     UsersModule.factory( 'UsersService', [ 'BaseService', UsersService ] );
 });

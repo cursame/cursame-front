@@ -15,5 +15,6 @@
                 <li ng-class="{active:$state.is('user_info')}"><a ui-sref="user_info({ url : user.url })">{{ 'users.menu.information' | translate }}</a></li>
             </ul>
         </div>
+        <div id="profile-content" ui-view="profile-content"></div>
     </div>
 </div>
