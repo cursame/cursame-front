@@ -75,6 +75,16 @@ define( function () {
                         templateUrl     : 'partials/users/publish.html'
                     }
                 }
+            })
+            .state( 'user_info', {
+                parent      : 'user_base',
+                url         : '/user/:profile/info',
+                views       : {
+                    'profile-content'   : {
+                        templateUrl     : 'partials/users/info.html',
+                        controller      : 'UsersInfoCtrl'
+                    }
+                }
             });
     };
 });

@@ -1,0 +1,21 @@
+<h2>{{ 'users.menu.information' | translate }}</h2>
+<div class="row">
+    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12">
+        <div class="user-widget">
+            <div class="body">
+                <p><strong>{{ 'forms.label.biography' | translate }}</strong></p>
+                <p>{{ user.biography }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-lg-4 col-md-4 col-sm-12 col-xs-12">
+        <div class="user-widget">
+            <div class="body">
+                <p class="text-label"><span class="glyphicon glyphicon-envelope"></span>{{ 'forms.label.email' | translate }}:</p>
+                <p><a href="mailto:{{ user.email }}" alt="email">{{ user.email }}</a></p>
+                <p class="text-label"><span class="glyphicon glyphicon-twitter"></span>{{ 'forms.label.twitter' | translate }}:</p>
+                <p><a href="{{ user.twitter }}" alt="Twitter" target="_blank">{{ user.twitter }}</a></p>
+            </div>
+        </div>
+    </div>
+</div>
