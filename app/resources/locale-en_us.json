@@ -54,5 +54,9 @@
     "main.menu.radar"                       : "Radar",
     "main.menu.superadmin"                  : "Superadmin panel",
     "sessions.start.login"                  : "Log in",
+    "users.menu.courses"                    : "Courses",
+    "users.menu.friends"                    : "Friends",
+    "users.menu.information"                : "Information",
+    "users.menu.publications"               : "Publications",
     "users.register"                        : "Register"
 }

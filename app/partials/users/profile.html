@@ -1,10 +1,19 @@
-<div class="row">
+<div class="row body-container">
     <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2">
         <div id="user-banner">
             <div id="user-avatar">
                 <a ui-sref="user_profile({ profile : user.url })"><img ng-src="{{ user.avatar }}" alt="{{ user.name + ' ' + user.last_name }}"></a>
             </div>
             <a class="btn btn-default" ui-sref="user_edit">{{ 'buttons.edit_profile' | translate }}</a>
+        </div>
+        <div class="profile-container">
+            <h1>{{ user.name + ' ' + user.last_name }}</h1>
+            <ul class="user-menu">
+                <li ng-class="{active:$state.is('user_profile')}"><a ui-sref="user_profile({ profile : user.url })">{{ 'users.menu.publications' | translate }}</a></li>
+                <li ng-class="{active:$state.is('user_courses')}"><a ui-sref="user_courses({ url : user.url })">{{ 'users.menu.courses' | translate }}</a></li>
+                <li ng-class="{active:$state.is('user_friends')}"><a ui-sref="user_friends({ url : user.url })">{{ 'users.menu.friends' | translate }}</a></li>
+                <li ng-class="{active:$state.is('user_info')}"><a ui-sref="user_info({ url : user.url })">{{ 'users.menu.information' | translate }}</a></li>
+            </ul>
         </div>
     </div>
 </div>
