@@ -71,7 +71,9 @@ define( function () {
                 parent      : 'user_base',
                 url         : '/user/:profile',
                 views       : {
-                    
+                    'profile-content'   : {
+                        templateUrl     : 'partials/users/publish.html'
+                    }
                 }
             });
     };

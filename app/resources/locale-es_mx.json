@@ -10,6 +10,7 @@
     "base.label.unblocking_instructions"    : "¿No recibiste las instrucciones de desbloqueo?",
     "buttons.edit_profile"                  : "Editar Perfil",
     "forms.button.cancel"                   : "Cancelar",
+    "forms.button.comment"                  : "Comentar",
     "forms.button.login"                    : "Iniciar sesión",
     "forms.button.register"                 : "Registrarme",
     "forms.button.resend_instructions"      : "Reenviar Instrucciones",
@@ -36,6 +37,7 @@
     "forms.label.unblock_title"             : "¿No has recibido las instrucciones de confirmación?",
     "forms.label.unblock"                   : "Ingresa tu correo electrónico para dar seguimiento a tu solicitud.",
     "forms.label.unsubscribe"               : "¿Quieres darte de baja?",
+    "forms.placeholder.leave_comment"       : "Deja un comentario",
     "forms.placeholder.twitter"             : "Ejemplo: https://twitter.com/cursame",
     "forms.placeholder.type_password"       : "Ingresa tu contraseña para actualizar",
     "forms.title.user_edit"                 : "Editar Perfil",
@@ -58,5 +60,6 @@
     "users.menu.friends"                    : "Amigos",
     "users.menu.information"                : "Información",
     "users.menu.publications"               : "Publicaciones",
+    "users.profile.comment"                 : "Comentario",
     "users.register"                        : "Regístrate alumno"
 }

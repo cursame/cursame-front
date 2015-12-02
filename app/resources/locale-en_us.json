@@ -10,6 +10,7 @@
     "base.label.unblocking_instructions"    : "Didn't get the unblocking instructions?",
     "buttons.edit_profile"                  : "Edit Profile",
     "forms.button.cancel"                   : "Cancel",
+    "forms.button.comment"                  : "Comment",
     "forms.button.login"                    : "Log In",
     "forms.button.register"                 : "Register",
     "forms.button.resend_instructions"      : "Resend Instructions",
@@ -36,6 +37,7 @@
     "forms.label.unblock_title"             : "Haven't received your unblocking instructions?",
     "forms.label.unblock"                   : "Enter your email to follow-up your request.",
     "forms.label.unsubscribe"               : "Do you want to unsubscribe?",
+    "forms.placeholder.leave_comment"       : "Leave a comment",
     "forms.placeholder.twitter"             : "Example: https://twitter.com/cursame",
     "forms.placeholder.type_password"       : "Type your password to update",
     "forms.title.user_edit"                 : "Edit Profile",
@@ -58,5 +60,6 @@
     "users.menu.friends"                    : "Friends",
     "users.menu.information"                : "Information",
     "users.menu.publications"               : "Publications",
+    "users.profile.comment"                 : "Comment",
     "users.register"                        : "Register"
 }
