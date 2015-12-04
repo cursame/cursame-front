@@ -5,7 +5,7 @@
                 <a class="author" ui-sref="user_profile({ profile : publication.user.url })"><img class="user-avatar" ng-src="{{ publication.user.avatar }}"></a>
                 <div class="user-header">
                     <p class="user-name"><a ui-sref="user_profile({ profile : publication.user.url })">{{ publication.user.name + ' ' + publication.user.last_name }}</a></p>
-                    <time>{{ publication.date }}</time>
+                    <time>{{ publication.date | relativeDate }}</time>
                 </div>
             </div>
         </div>
