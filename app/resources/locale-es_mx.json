@@ -41,6 +41,7 @@
     "forms.placeholder.leave_comment"       : "Deja un comentario",
     "forms.placeholder.twitter"             : "Ejemplo: https://twitter.com/cursame",
     "forms.placeholder.type_password"       : "Ingresa tu contraseña para actualizar",
+    "forms.placeholder.write_comment"       : "Escribe un comentario",
     "forms.title.user_edit"                 : "Editar Perfil",
     "main.menu.activities"                  : "Actividades",
     "main.menu.admin"                       : "Administración",
