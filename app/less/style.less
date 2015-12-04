@@ -125,15 +125,24 @@ h2                              { margin-bottom: 20px; font-size: 16px; font-wei
 .user-widget .user-name > a     { font-size: 14px; font-weight: 600; }
 .user-widget time               { font-size: 12px; color: #999; }
 .user-widget .likes             { margin-bottom: 0; }
-.user-widget .footer            { border-top: 1px solid #d6d8db; overflow: hidden; }
+.user-widget .footer            { background-color: #fcfcfc; border-top: 1px solid #d6d8db; overflow: hidden; border-radius: 0 0 5px 5px; }
 .user-widget .footer .btn       { margin-right: 10px; }
 .user-widget .footer .btn:first-child                   { margin-right: 0; }
 
 /*****************************
     COMMENTS STYLES
 *****************************/
+.comment,
 .comment-form                   { overflow: hidden; }
+.comment                        { margin-bottom: 5px; padding-bottom: 5px; border-bottom: 1px solid #d6d8db; }
+.comment:first-child            { margin-top: -5px; }
+.comment:last-child             { margin-bottom: 10px; }
+.comment > .avatar,
 .comment-form > .avatar         { display: block; width: 30px; margin-right: 10px; float: left; }
+.comment .comment-info          { width: ~"calc(100% - 40px)"; float: left; }
+.comment p,
+.comment .user-name > a         { margin-bottom: 0; font-size: 12px; line-height: 1.5em; }
+.comment .likes time            { display: inline-block; margin-left: 10px; }
 .comment-form > .form-control   { width: ~"calc(100% - 88px)"; height: 30px; margin-right: 10px; float: left; }
 .comment-form > .btn            { margin-right: 0 !important; float: left; text-align: center; }
 .comment-form > .btn > .glyphicon                       { margin-right: 0; }
