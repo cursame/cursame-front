@@ -21,10 +21,6 @@ define( function () {
                         controller  : 'DashboardBaseCtrl'
                     }
                 }
-            })
-            .state( 'home', {
-                parent      : 'dashboard',
-                url         : '/'
             });
     };
 });
