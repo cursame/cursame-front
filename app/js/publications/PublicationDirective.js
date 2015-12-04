@@ -1,7 +1,7 @@
 'use strict';
 
 define( function () {
-    return function () {
+    return function ( Comments ) {
         return {
             restrict    : 'E',
             scope       : {
@@ -10,7 +10,9 @@ define( function () {
             },
             templateUrl : 'partials/publications/publication.html',
             link        : function ( scope ) {
-                
+                scope.comments  = Comments.query({
+                    publication     : scope.publication.id
+                });
             }
         };
     };

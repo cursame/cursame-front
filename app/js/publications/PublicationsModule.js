@@ -7,7 +7,7 @@ define( function ( require ) {
 
     var PublicationsModule      = angular.module( 'PublicationsModule', []);
 
-    PublicationsModule.directive( 'cursamePublication', [ PublicationDirective ] );
+    PublicationsModule.directive( 'cursamePublication', [ 'CommentsService', PublicationDirective ] );
 
     PublicationsModule.factory( 'PublicationsService', [ 'BaseService', PublicationsService ] );
 
