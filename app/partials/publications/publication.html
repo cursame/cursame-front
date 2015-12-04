@@ -1,0 +1,24 @@
+<div class="user-widget">
+    <div class="body">
+        <div class="row">
+            <div class="col-lg-1 col-md-1 col-sm-2 col-xs-2">
+                <a ui-sref="user_profile({ profile : publication.user.url })"><img class="user-avatar" ng-src="{{ publication.user.avatar }}"></a>
+            </div>
+            <div class="col-lg-11 col-md-11 col-sm-10 col-xs-10">
+                <p><a ui-sref="user_profile({ profile : publication.user.url })">{{ user.name + ' ' + user.last_name }}</a></p>
+            </div>
+            <div class="col-lg-12 col-md-12 col-sm-12">
+                <p>{{ publication.content }}</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="row">
+            <div class="col-lg-12 col-md-12 col-sm-12 comment-form">
+                <a class="avatar" ui-sref="user_profile({ profile : user.url })"><img class="user-avatar" ng-src="{{ user.avatar }}"></a>
+                <input type="text" name="comment" class="form-control" placeholder="{{ 'forms.placeholder.write_comment' | translate }}">
+                <button type="button" class="btn btn-default btn-upload"><span class="glyphicon glyphicon-paperclip"></span></button>
+            </div>
+        </div>
+    </div>
+</div>
