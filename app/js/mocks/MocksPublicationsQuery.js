@@ -79,15 +79,17 @@ define( function () {
                 }
             };
 
-        if ( user != undefined ) {
+        if ( user != undefined && user != '' ) {
             for ( var i = 0; i < publications.length; i++ ) {
                 if ( publications[i].user.url == user ) {
                     response.results.push( publications[i] );
                 }
             }
-
-            response.pagination.total   = response.results.length;
+        } else {
+            response.results        = publications;
         }
+
+        response.pagination.total   = response.results.length;
 
         return [ 200, response ];
     };

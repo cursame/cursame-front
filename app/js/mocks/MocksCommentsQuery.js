@@ -13,15 +13,17 @@ define( function ( require ) {
                 }
             };
 
-        if ( publication != undefined ) {
+        if ( publication != undefined && publication != '' ) {
             for ( var i = 0; i < comments.length; i++ ) {
                 if ( comments[i].publication == publication ) {
                     response.results.push( comments[i] );
                 }
             }
-
-            response.pagination.total   = response.results.length;
+        } else {
+            response.results        = comments;
         }
+
+        response.pagination.total   = response.results.length;
 
         return [ 200, response ];
     };
