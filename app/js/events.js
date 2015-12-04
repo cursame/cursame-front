@@ -4,6 +4,12 @@ define( function () {
     var events      = angular.module( 'events', []);
 
     events.constant( 'events', {
+            'COMMENTS_CREATE'           : 'comments.create',
+            'COMMENTS_DELETE'           : 'comments.delete',
+            'COMMENTS_ERROR'            : 'comments.error',
+            'COMMENTS_RETRIEVED'        : 'comments.retrieved',
+            'COMMENTS_UPDATED'          : 'comments.updated',
+            'COMMENTS_QUERY'            : 'comments.query',
             'LOGIN_SUCCESS'             : 'login.success',
             'LOGIN_ERROR'               : 'login.error',
             'LOGOUT_SUCCESS'            : 'logout.success',

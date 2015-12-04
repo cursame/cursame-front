@@ -4,6 +4,7 @@ define( function ( require ) {
 
     require( 'config' );
     require( 'events' );
+    require( 'comments/CommentsModule' );
     require( 'common/CommonModule' );
     require( 'dashboard/DashboardModule' );
     require( 'mocks/MocksModule' );
@@ -19,6 +20,7 @@ define( function ( require ) {
             'ui.router',
             'config',
             'events',
+            'CommentsModule',
             'CommonModule',
             'DashboardModule',
             'MocksModule',
