@@ -1,21 +1,28 @@
 <div class="row body-container">
         <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2 publications-state">
             <div class="user-widget">
-            <div class="header">
-                <p><span class="glyphicon glyphicon-comment"></span> {{ 'users.profile.comment' | translate }}</p>
+                <div class="header">
+                    <ul>
+                        <li class="active" data-form="comment"><span class="glyphicon glyphicon-comment aqua"></span> {{ 'users.profile.comment' | translate }}</li>
+                        <li data-form="homework"><span class="glyphicon glyphicon-file green"></span> {{ 'users.profile.homework' | translate }}</li>
+                        <li data-form="discussion"><span class="glyphicon glyphicon-transfer yellow"></span> {{ 'users.profile.discussion' | translate }}</li>
+                        <li data-form="questionary"><span class="glyphicon glyphicon-check orange"></span> {{ 'users.profile.questionary' | translate }}</li>
+                        <li data-form="form"><span class="glyphicon glyphicon-list purple"></span> {{ 'users.profile.form' | translate }}</li>
+                    </ul>
+                </div>
+                <div class="body">
+                    <form>
+                        <textarea id="comment" class="form-control" name="comment" placeholder="{{ 'forms.placeholder.leave_comment' | translate }}"></textarea>
+                    </form>
+                </div>
+                <div class="footer">
+                    <button type="button" class="btn btn-primary pull-right">{{ 'forms.button.comment' | translate }}</button>
+                    <button type="button" class="btn btn-default pull-right"><span class="glyphicon glyphicon-paperclip"></span>{{ 'forms.button.file' | translate }}</button>
+                </div>
             </div>
-            <div class="body">
-                <form>
-                    <textarea id="comment" class="form-control" name="comment" placeholder="{{ 'forms.placeholder.leave_comment' | translate }}"></textarea>
-                </form>
+            <div ng-repeat="publication in publications">
+                <cursame-publication publication="publication" user="user"></cursame-publication>
             </div>
-            <div class="footer">
-                <button type="button" class="btn btn-primary pull-right">{{ 'forms.button.comment' | translate }}</button>
-                <button type="button" class="btn btn-default pull-right"><span class="glyphicon glyphicon-paperclip"></span>{{ 'forms.button.file' | translate }}</button>
-            </div>
-        </div>
-        <div ng-repeat="publication in publications">
-            <cursame-publication publication="publication" user="user"></cursame-publication>
         </div>
     </div>
 </div>

@@ -93,5 +93,9 @@
     "users.menu.information"                : "Information",
     "users.menu.publications"               : "Publications",
     "users.profile.comment"                 : "Comment",
+    "users.profile.form"                    : "Form",
+    "users.profile.discussion"              : "Discussion",
+    "users.profile.homework"                : "Homework",
+    "users.profile.questionary"             : "Questionary",
     "users.register"                        : "Register"
 }
