@@ -1,6 +1,7 @@
 'use strict';
 
 define( function ( require ) {
+    var CriteriaDirective           = require( 'publications/CriteriaDirective' );
     var PublicationsCtrl            = require( 'publications/PublicationsCtrl' );
     var PublicationDirective        = require( 'publications/PublicationDirective' );
     var PublicationsRelativeDate    = require( 'publications/PublicationsRelativeDate' );
@@ -12,6 +13,8 @@ define( function ( require ) {
     PublicationsModule.config([ '$stateProvider', PublicationsRouter ]);
 
     PublicationsModule.controller( 'PublicationsCtrl', [ '$scope', 'PublicationsService', PublicationsCtrl ] );
+
+    PublicationsModule.directive( 'cursameCriterion', [ CriteriaDirective ] );
 
     PublicationsModule.directive( 'cursamePublication', [ 'CommentsService', PublicationDirective ] );
 

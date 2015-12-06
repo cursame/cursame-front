@@ -1,0 +1,5 @@
+<div class="homework-criteria" ng-repeat="criteria in criterion">
+    <input type="text" name="criteria" class="form-control" placeholder="{{ 'forms.placeholder.criteria' | translate }}" ng-model="criteria.description">
+    <span class="glyphicon glyphicon-remove" ng-click="remove($index)"></span>
+</div>
+<button type="button" class="btn btn-default" ng-click="add()">{{ 'forms.button.add_criteria' | translate }}</button>
