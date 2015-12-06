@@ -7,6 +7,7 @@ define( function ( require ) {
     var PublicationsRelativeDate    = require( 'publications/PublicationsRelativeDate' );
     var PublicationsRouter          = require( 'publications/PublicationsRouter' );
     var PublicationsService         = require( 'publications/PublicationsService' );
+    var QuestionsDirective          = require( 'publications/QuestionsDirective' );
 
     var PublicationsModule          = angular.module( 'PublicationsModule', []);
 
@@ -17,6 +18,8 @@ define( function ( require ) {
     PublicationsModule.directive( 'cursameCriterion', [ CriteriaDirective ] );
 
     PublicationsModule.directive( 'cursamePublication', [ 'CommentsService', PublicationDirective ] );
+
+    PublicationsModule.directive( 'cursameQuestions', [ 'events', QuestionsDirective ] );
 
     PublicationsModule.factory( 'PublicationsService', [ 'BaseService', PublicationsService ] );
 

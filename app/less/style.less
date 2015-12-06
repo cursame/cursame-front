@@ -34,7 +34,9 @@ h2                              { margin-bottom: 20px; font-size: 16px; font-wei
 .text-label                     { font-size: 11px; font-weight: 600; text-transform: uppercase; color: #999; }
 .user-widget .user-name > a     { font-size: 14px; font-weight: 600; }
 .user-widget .header > p        { font-weight: 400; }
+.question-item > .glyphicon,
 .homework-criteria .glyphicon   { color: #999; }
+.question-item .question-footer span                        { line-height: 35px; color: #337ab7; cursor: pointer; }
 
 /*****************************
     FORM STYLES
@@ -45,6 +47,9 @@ h2                              { margin-bottom: 20px; font-size: 16px; font-wei
 .form-horizontal .checkbox      { padding-top: 0; }
 .checkbox label,
 .checkbox-inline label          { padding-top: 7px; font-weight: normal; }
+.question-item .form-control    { border-radius: 4px 4px 0 0; }
+.question-item .answer          { background-color: #f7f7f7; border-radius: 0; }
+.question-item .answer:first-child                          { border-top: none; }
 
 /*****************************
     NOTIFICATION STYLES
@@ -147,9 +152,18 @@ h2                              { margin-bottom: 20px; font-size: 16px; font-wei
 .publications-state             { margin-top: 20px; }
 .homework-criteria              { margin-bottom: 15px; position: relative; }
 .homework-criteria .glyphicon   { display: none; position: absolute; right: 10px; top: 50%; cursor: pointer; transform: translateY(-50%); transition: all ease-in 0.3s; }
+.question-item                  { margin-bottom: 15px; position: relative; }
+.question-item > .glyphicon     { display: none; position: absolute; right: 10px; top: 11px; cursor: pointer; }
+.question-item .question-footer { padding: 0 15px; background-color: #f7f7f7; border: 1px solid #ccc; border-radius: 0 0 4px 4px; border-collapse: collapse; }
+.question-answers               { position: relative; }
 .homework-criteria .form-control                        { transition: width ease-in 0.3s; }
 .homework-criteria:hover .form-control                  { width: ~"calc( 100% - 33px )"; }
 .homework-criteria:hover .glyphicon                     { display: block; }
+.question-item:hover > .glyphicon                       { display: block; }
+.question-answers .answer-controls                      { position: absolute; right: 10px; top: 50%; transform: translateY(-50%); overflow: hidden; }
+.question-answers .answer-controls .btn                 { margin-top: 0; margin-right: 5px; float: left; }
+.question-answers .answer-controls .btn input           { margin-top: 0; margin-right: 5px; }
+.question-answers .answer-controls .btn:last-child      { margin-right: 0; }
 .user-widget .header.active-0:after,
 .user-widget .header.active-0:before                    { left: 54px; }
 .user-widget .header.active-1:after,
