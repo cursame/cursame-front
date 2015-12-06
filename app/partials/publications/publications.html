@@ -1,19 +1,163 @@
 <div class="row body-container">
         <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2 publications-state">
             <div class="user-widget">
-                <div class="header">
+                <div class="header active-0">
                     <ul>
-                        <li class="active" data-form="comment"><span class="glyphicon glyphicon-comment aqua"></span> {{ 'users.profile.comment' | translate }}</li>
-                        <li data-form="homework"><span class="glyphicon glyphicon-file green"></span> {{ 'users.profile.homework' | translate }}</li>
-                        <li data-form="discussion"><span class="glyphicon glyphicon-transfer yellow"></span> {{ 'users.profile.discussion' | translate }}</li>
-                        <li data-form="questionary"><span class="glyphicon glyphicon-check orange"></span> {{ 'users.profile.questionary' | translate }}</li>
-                        <li data-form="form"><span class="glyphicon glyphicon-list purple"></span> {{ 'users.profile.form' | translate }}</li>
+                        <li class="active" data-form="comment" ng-click="panel( $event, 'comment' )"><span class="glyphicon glyphicon-comment aqua"></span> {{ 'users.profile.comment' | translate }}</li>
+                        <li data-form="homework" ng-click="panel( $event, 'homework' )"><span class="glyphicon glyphicon-file green"></span> {{ 'users.profile.homework' | translate }}</li>
+                        <li data-form="discussion" ng-click="panel( $event, 'discussion' )"><span class="glyphicon glyphicon-transfer yellow"></span> {{ 'users.profile.discussion' | translate }}</li>
+                        <li data-form="questionary" ng-click="panel( $event, 'questionary' )"><span class="glyphicon glyphicon-check orange"></span> {{ 'users.profile.questionary' | translate }}</li>
+                        <li data-form="form" ng-click="panel( $event, 'form' )"><span class="glyphicon glyphicon-list purple"></span> {{ 'users.profile.form' | translate }}</li>
                     </ul>
                 </div>
                 <div class="body">
-                    <form>
-                        <textarea id="comment" class="form-control" name="comment" placeholder="{{ 'forms.placeholder.leave_comment' | translate }}"></textarea>
-                    </form>
+                    <div id="panel-comment" class="panel active">
+                        <form>
+                            <textarea id="comment" class="form-control" name="comment" placeholder="{{ 'forms.placeholder.leave_comment' | translate }}"></textarea>
+                        </form>
+                    </div>
+                    <div id="panel-homework" class="panel">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label for="topic" class="col-sm-3 control-label">{{ 'forms.label.topic_homework' | translate }}:</label>
+                                <div class="col-sm-9">
+                                    <input type="text" name="topic" class="form-control" placeholder="{{ 'forms.placeholder.topic' | translate }}">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">{{ 'forms.label.dates' | translate }}:</label>
+                                <div class="col-sm-9">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <input type="text" name="publication-date" class="form-control" placeholder="{{ 'forms.placeholder.publication_date' | translate }}">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="text" name="delivery-date" class="form-control" placeholder="{{ 'forms.placeholder.delivery_date' | translate }}">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="description" class="col-sm-3 control-label">{{ 'forms.label.description' | translate }}:</label>
+                                <div class="col-sm-9">
+                                    <textarea name="description" class="form-control" rows="3" placeholder="{{ 'forms.label.description' | translate }}"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="support" class="col-sm-3 control-label">{{ 'forms.label.support_material' | translate }}:</label>
+                                <div class="col-sm-9">
+                                    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-upload"></span>{{ 'forms.button.dropbox' | translate }}</button>
+                                    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-paperclip"></span>{{ 'forms.button.file' | translate }}</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="panel-discussion" class="panel">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label for="topic" class="col-sm-3 control-label">{{ 'forms.label.topic_discussion' | translate }}:</label>
+                                <div class="col-sm-9">
+                                    <input type="text" name="topic" class="form-control" placeholder="{{ 'forms.placeholder.topic' | translate }}">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="description" class="col-sm-3 control-label">{{ 'forms.label.description' | translate }}:</label>
+                                <div class="col-sm-9">
+                                    <textarea name="description" class="form-control" rows="3" placeholder="{{ 'forms.label.description' | translate }}"></textarea>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="support" class="col-sm-3 control-label">{{ 'forms.label.support_material' | translate }}:</label>
+                                <div class="col-sm-9">
+                                    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-upload"></span>{{ 'forms.button.dropbox' | translate }}</button>
+                                    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-paperclip"></span>{{ 'forms.button.file' | translate }}</button>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <div class="col-sm-9 col-sm-offset-3">
+                                    <div class="checkbox">
+                                        <label><input type="checkbox" name="gradable"> {{ 'forms.label.gradable' | translate }}</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="panel-questionary" class="panel">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label for="topic" class="col-sm-3 control-label">{{ 'forms.label.topic_discussion' | translate }}:</label>
+                                <div class="col-sm-9">
+                                    <input type="text" name="topic" class="form-control" placeholder="{{ 'forms.placeholder.topic' | translate }}">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">{{ 'forms.label.dates' | translate }}:</label>
+                                <div class="col-sm-9">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <input type="text" name="publication-date" class="form-control" placeholder="{{ 'forms.placeholder.publication_date' | translate }}">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="text" name="delivery-date" class="form-control" placeholder="{{ 'forms.placeholder.delivery_date' | translate }}">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="support" class="col-sm-3 control-label">{{ 'forms.label.support_material' | translate }}:</label>
+                                <div class="col-sm-9">
+                                    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-upload"></span>{{ 'forms.button.dropbox' | translate }}</button>
+                                    <button type="button" class="btn btn-default"><span class="glyphicon glyphicon-paperclip"></span>{{ 'forms.button.file' | translate }}</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                    <div id="panel-form" class="panel">
+                        <form class="form-horizontal">
+                            <div class="form-group">
+                                <label for="title" class="col-sm-3 control-label">{{ 'forms.label.title' | translate }}:</label>
+                                <div class="col-sm-9">
+                                    <input type="text" name="title" class="form-control" placeholder="{{ 'forms.placeholder.form_title' | translate }}">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="description" class="col-sm-3 control-label">{{ 'forms.label.description' | translate }}:</label>
+                                <div class="col-sm-9">
+                                    <input type="text" name="description" class="form-control" placeholder="{{ 'forms.placeholder.form_description' | translate }}">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="url" class="col-sm-3 control-label">{{ 'forms.label.url' | translate }}:</label>
+                                <div class="col-sm-9">
+                                    <input type="text" name="url" class="form-control" placeholder="{{ 'forms.placeholder.form_url' | translate }}">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">{{ 'forms.label.dates' | translate }}:</label>
+                                <div class="col-sm-9">
+                                    <div class="row">
+                                        <div class="col-sm-6">
+                                            <input type="text" name="publication-date" class="form-control" placeholder="{{ 'forms.placeholder.publication_date' | translate }}">
+                                        </div>
+                                        <div class="col-sm-6">
+                                            <input type="text" name="delivery-date" class="form-control" placeholder="{{ 'forms.placeholder.delivery_date' | translate }}">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label class="col-sm-3 control-label">{{ 'forms.label.roles' | translate }}:</label>
+                                <div class="col-sm-9">
+                                    <div class="checkbox-inline">
+                                        <label><input type="checkbox" name="role_professor"> {{ 'forms.label.professor' | translate }}</label>
+                                    </div>
+                                    <div class="checkbox-inline">
+                                        <label><input type="checkbox" name="role_student"> {{ 'forms.label.student' | translate }}</label>
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
                 </div>
                 <div class="footer">
                     <button type="button" class="btn btn-primary pull-right">{{ 'forms.button.comment' | translate }}</button>
