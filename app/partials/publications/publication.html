@@ -2,9 +2,9 @@
     <div class="body">
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-                <a class="author" ui-sref="user_profile({ profile : publication.user.url })"><img class="user-avatar" ng-src="{{ publication.user.avatar }}"></a>
+                <a class="author" ui-sref="user_profile({ profile : publication.user.url })" ui-sref-opts="{ reload: true }"><img class="user-avatar" ng-src="{{ publication.user.avatar }}"></a>
                 <div class="user-header">
-                    <p class="user-name"><a ui-sref="user_profile({ profile : publication.user.url })">{{ publication.user.name + ' ' + publication.user.last_name }}</a></p>
+                    <p class="user-name"><a ui-sref="user_profile({ profile : publication.user.url })" ui-sref-opts="{ reload: true }">{{ publication.user.name + ' ' + publication.user.last_name }}</a></p>
                     <time>{{ publication.date | relativeDate }}</time>
                 </div>
             </div>
@@ -24,7 +24,7 @@
         </div>
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 comment-form">
-                <a class="avatar" ui-sref="user_profile({ profile : user.url })"><img class="user-avatar" ng-src="{{ user.avatar }}"></a>
+                <a class="avatar" ui-sref="user_profile({ profile : user.url })" ui-sref-opts="{ reload: true }"><img class="user-avatar" ng-src="{{ user.avatar }}"></a>
                 <input type="text" name="comment" class="form-control" placeholder="{{ 'forms.placeholder.write_comment' | translate }}">
                 <button type="button" class="btn btn-default btn-upload"><span class="glyphicon glyphicon-paperclip"></span></button>
             </div>
