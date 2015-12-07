@@ -8,7 +8,8 @@ define( function () {
                 url     : '/courses',
                 views   : {
                     'main-container'    : {
-                        templateUrl     : 'partials/courses/courses.html'
+                        templateUrl     : 'partials/courses/courses.html',
+                        controller      : 'CoursesList'
                     }
                 }
             });

@@ -1,12 +1,22 @@
 <div class="row body-container">
-        <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2">
-            <div class="state-header">
-                <h1><span class="glyphicon glyphicon-list"></span>{{ 'base.label.courses' | translate }}</h1>
-                <a ui-sref="courses.add" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span>{{ 'buttons.new' | translate }}</a>
-                <ul class="app-submenu">
-                    <li ng-class="{active:$state.is('courses')}"><a ui-sref="courses">{{ 'main.submenu.active' | translate }}</a></li>
-                    <li ng-class="{active:$state.is('courses_finished')}"><a ui-sref="courses_finished">{{ 'main.submenu.finished' | translate }}</a></li>
-                </ul>
+    <div class="col-lg-8 col-md-8 col-sm-12 col-xs-12 col-lg-offset-2 col-md-offset-2">
+        <div class="state-header">
+            <h1><span class="glyphicon glyphicon-list"></span>{{ 'base.label.courses' | translate }}</h1>
+            <a ui-sref="courses.add" class="btn btn-primary"><span class="glyphicon glyphicon-plus"></span>{{ 'buttons.new' | translate }}</a>
+            <ul class="app-submenu">
+                <li ng-class="{active:$state.is('courses')}"><a ui-sref="courses">{{ 'main.submenu.active' | translate }}</a></li>
+                <li ng-class="{active:$state.is('courses_finished')}"><a ui-sref="courses_finished">{{ 'main.submenu.finished' | translate }}</a></li>
+            </ul>
+        </div>
+        <div class="row">
+            <div class="course-item col-lg-4 col-md-4 col-sm-6 col-xs-12" ng-repeat="course in courses">
+                <div class="inner">
+                    <div class="content">
+                        <h5><a ui-sref="course_info({ id : course.id })">{{ course.name }}</a></h5>
+                        <p><a ui-sref="user_profile({ profile : course.admin.url })">{{ course.admin.name + ' ' + course.admin.last_name }}</a></p>
+                        <p>{{ course.members.length }} <span ng-if="course.members.length == 1">{{ 'base.label.member' | translate }}</span><span ng-if="course.members.length != 1">{{ 'base.label.members' | translate }}</span></p>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
