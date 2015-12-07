@@ -42,6 +42,7 @@ h2                              { margin-bottom: 20px; font-size: 16px; font-wei
     FORM STYLES
 *****************************/
 .form-group .btn                { margin-top: 3px; }
+.form-group .dropdown-menu li   { padding-left: 10px; cursor: pointer; }
 .form-control:focus             { background-color: rgba( 82, 168, 236, 0.1 ); }
 .form-horizontal .checkbox-inline,
 .form-horizontal .checkbox      { padding-top: 0; }
@@ -49,6 +50,8 @@ h2                              { margin-bottom: 20px; font-size: 16px; font-wei
 .checkbox-inline label          { padding-top: 7px; font-weight: normal; }
 .question-item .form-control    { border-radius: 4px 4px 0 0; }
 .question-item .answer          { background-color: #f7f7f7; border-radius: 0; }
+.form-group .dropdown-menu li.active,
+.form-group .dropdown-menu li:hover                         { background-color: #eee; }
 .question-item .answer:first-child                          { border-top: none; }
 
 /*****************************
@@ -154,7 +157,7 @@ h2                              { margin-bottom: 20px; font-size: 16px; font-wei
 .homework-criteria .glyphicon   { display: none; position: absolute; right: 10px; top: 50%; cursor: pointer; transform: translateY(-50%); transition: all ease-in 0.3s; }
 .question-item                  { margin-bottom: 15px; position: relative; }
 .question-item > .glyphicon     { display: none; position: absolute; right: 10px; top: 11px; cursor: pointer; }
-.question-item .question-footer { padding: 0 15px; background-color: #f7f7f7; border: 1px solid #ccc; border-radius: 0 0 4px 4px; border-collapse: collapse; }
+.question-item .question-footer { padding: 0 15px; background-color: #f7f7f7; border: 1px solid #ccc; border-top: none; border-radius: 0 0 4px 4px; border-collapse: collapse; }
 .question-answers               { position: relative; }
 .homework-criteria .form-control                        { transition: width ease-in 0.3s; }
 .homework-criteria:hover .form-control                  { width: ~"calc( 100% - 33px )"; }
