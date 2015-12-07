@@ -3,6 +3,7 @@
 define( function () {
     return [
         {
+            id          : 1,
             admin       : {
                 avatar     : 'https://s3.amazonaws.com/uifaces/faces/twitter/BillSKenney/128.jpg',
                 email      : 'admin@cursa.me',
@@ -20,6 +21,7 @@ define( function () {
             start_date  : new Date( 2015, 8, 6 ).toISOString()
         },
         {
+            id          : 2,
             admin       : {
                 avatar     : 'https://s3.amazonaws.com/uifaces/faces/twitter/BillSKenney/128.jpg',
                 email      : 'admin@cursa.me',
@@ -31,12 +33,12 @@ define( function () {
             description : 'Basic history',
             name        : 'History',
             members     : [
-                'jdoe',
-                'jane.doe'
+                'jdoe'
             ],
             start_date  : new Date( 2015, 8, 6 ).toISOString()
         },
         {
+            id          : 3,
             admin       : {
                 avatar     : 'https://s3.amazonaws.com/uifaces/faces/twitter/BillSKenney/128.jpg',
                 email      : 'admin@cursa.me',
