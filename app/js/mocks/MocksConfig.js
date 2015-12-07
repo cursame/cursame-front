@@ -2,6 +2,7 @@
 
 define( function ( require ) {
     var MocksCommentsQuery      = require( 'mocks/MocksCommentsQuery' );
+    var MocksCoursesQuery       = require( 'mocks/MocksCoursesQuery' );
     var MocksPublicationsQuery  = require( 'mocks/MocksPublicationsQuery' );
     var MocksSessionEnd         = require( 'mocks/MocksSessionEnd' );
     var MocksSessionStart       = require( 'mocks/MocksSessionStart' );
@@ -12,6 +13,8 @@ define( function ( require ) {
         $httpBackend.whenGET( /resources/ ).passThrough();
 
         $httpBackend.whenGET( /\/comments/ ).respond( MocksCommentsQuery );
+
+        $httpBackend.whenGET( /\/courses/ ).respond( MocksCoursesQuery );
 
         $httpBackend.whenGET( /\/publications/ ).respond( MocksPublicationsQuery );
 
