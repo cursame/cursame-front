@@ -8,6 +8,8 @@
     "base.label.confirmation_instructions"  : "Didn't get the confirmation instructions?",
     "base.label.forgot_password"            : "Forgot your password?",
     "base.label.like"                       : "Like",
+    "base.label.member"                     : "Member",
+    "base.label.members"                    : "Members",
     "base.label.not_user"                   : "Not an user? Register",
     "base.label.register"                   : "Register",
     "base.label.unblocking_instructions"    : "Didn't get the unblocking instructions?",

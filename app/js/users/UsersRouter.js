@@ -60,6 +60,7 @@ define( function () {
             .state( 'user_base', {
                 abstract    : true,
                 parent      : 'dashboard',
+                url         : '/users',
                 views       : {
                     'main-container'    : {
                         templateUrl     : 'partials/users/profile_base.html',
@@ -67,9 +68,19 @@ define( function () {
                     }
                 }
             })
+            .state( 'user_courses', {
+                parent      : 'user_base',
+                url         : '/:profile/courses',
+                views       : {
+                    'profile-content'   : {
+                        templateUrl     : 'partials/users/courses.html',
+                        controller      : 'UsersCoursesCtrl'
+                    }
+                }
+            })
             .state( 'user_profile', {
                 parent      : 'user_base',
-                url         : '/user/:profile',
+                url         : '/:profile',
                 views       : {
                     'profile-content'   : {
                         templateUrl     : 'partials/users/publish.html',
@@ -79,7 +90,7 @@ define( function () {
             })
             .state( 'user_info', {
                 parent      : 'user_base',
-                url         : '/user/:profile/info',
+                url         : '/:profile/info',
                 views       : {
                     'profile-content'   : {
                         templateUrl     : 'partials/users/info.html',

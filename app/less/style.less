@@ -8,7 +8,7 @@
 html, body                      { height: 100%; font-family: "Open Sans"; font-size: 13px; line-height: 1.8em; }
 body                            { padding-top: 50px; }
 .body-container                 { background-color: #eaecf0; }
-a, a:focus, a:visited           { outline: 0; text-decoration: none; }
+a, a:hover, a:focus, a:visited  { outline: 0; text-decoration: none; }
 img                             { max-width: 100%; max-height: 100%; }
 ul                              { padding-left: 0; list-style: none; }
 .btn .glyphicon                 { margin-right: 5px; }
@@ -34,6 +34,10 @@ h2                              { margin-bottom: 20px; font-size: 16px; font-wei
 .text-label                     { font-size: 11px; font-weight: 600; text-transform: uppercase; color: #999; }
 .user-widget .user-name > a     { font-size: 14px; font-weight: 600; }
 .user-widget .header > p        { font-weight: 400; }
+.course-item .inner p,
+.course-item .inner p > a       { color: #9ac7df; }
+.course-item .inner h5          { font-size: 18px; font-weight: 600; }
+.course-item .inner h5 > a      { color: #fff; }
 .question-item > .glyphicon,
 .homework-criteria .glyphicon   { color: #999; }
 .question-item .question-footer span                        { line-height: 35px; color: #337ab7; cursor: pointer; }
@@ -159,6 +163,12 @@ h2                              { margin-bottom: 20px; font-size: 16px; font-wei
 .question-item > .glyphicon     { display: none; position: absolute; right: 10px; top: 11px; cursor: pointer; }
 .question-item .question-footer { padding: 0 15px; background-color: #f7f7f7; border: 1px solid #ccc; border-top: none; border-radius: 0 0 4px 4px; border-collapse: collapse; }
 .question-answers               { position: relative; }
+.course-item .inner             { height: 200px; padding: 10px; background: url(../img/course_cover.png) no-repeat center center; background-size: cover; border-radius: 3px; position: relative; }
+.course-item .inner:before      { content: " "; width: 100%; height: 100%; background-color: #014264; position: absolute; left: 0; top: 0; border-radius: 3px; opacity: 0.80; z-index: 1; }
+.course-item .inner .content    { position: relative; z-index: 10; }
+.course-item .inner h5          { margin-top: 0; }
+.course-item .inner p,
+.course-item .inner p > a       { margin-bottom: 0; }
 .homework-criteria .form-control                        { transition: width ease-in 0.3s; }
 .homework-criteria:hover .form-control                  { width: ~"calc( 100% - 33px )"; }
 .homework-criteria:hover .glyphicon                     { display: block; }

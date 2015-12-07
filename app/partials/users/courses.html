@@ -1,0 +1,12 @@
+<h2>{{ 'users.menu.courses' | translate }}</h2>
+<div class="row">
+    <div class="course-item col-lg-4 col-md-4 col-sm-6 col-xs-12" ng-repeat="course in courses">
+        <div class="inner">
+            <div class="content">
+                <h5><a ui-sref="course_info({ id : course.id })">{{ course.name }}</a></h5>
+                <p><a ui-sref="user_profile({ profile : course.admin.url })">{{ course.admin.name + ' ' + course.admin.last_name }}</a></p>
+                <p>{{ course.members.length }} <span ng-if="course.members.length == 1">{{ 'base.label.member' | translate }}</span><span ng-if="course.members.length != 1">{{ 'base.label.members' | translate }}</span></p>
+            </div>
+        </div>
+    </div>
+</div>

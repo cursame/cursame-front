@@ -1,6 +1,7 @@
 'use strict';
 
 define( function ( require ) {
+    var UsersCoursesCtrl        = require( 'users/UsersCoursesCtrl' );
     var UsersFormCtrl           = require( 'users/UsersFormCtrl' );
     var UsersInfoCtrl           = require( 'users/UsersInfoCtrl' );
     var UsersProfileCtrl        = require( 'users/UsersProfileCtrl' );
@@ -8,9 +9,11 @@ define( function ( require ) {
     var UsersRouter             = require( 'users/UsersRouter' );
     var UsersService            = require( 'users/UsersService' );
 
-    var UsersModule         = angular.module( 'UsersModule', [] );
+    var UsersModule             = angular.module( 'UsersModule', [] );
 
     UsersModule.config([ '$stateProvider', UsersRouter ]);
+
+    UsersModule.controller( 'UsersCoursesCtrl', [ '$scope', '$stateParams', 'CoursesService', UsersCoursesCtrl ] );
 
     UsersModule.controller( 'UsersFormCtrl', [ UsersFormCtrl ] );
 
