@@ -2,6 +2,7 @@
 
 define( function ( require ) {
     var UsersCoursesCtrl        = require( 'users/UsersCoursesCtrl' );
+    var UsersEditCtrl           = require( 'users/UsersEditCtrl' );
     var UsersFormCtrl           = require( 'users/UsersFormCtrl' );
     var UsersInfoCtrl           = require( 'users/UsersInfoCtrl' );
     var UsersProfileCtrl        = require( 'users/UsersProfileCtrl' );
@@ -14,6 +15,8 @@ define( function ( require ) {
     UsersModule.config([ '$stateProvider', UsersRouter ]);
 
     UsersModule.controller( 'UsersCoursesCtrl', [ '$scope', '$stateParams', 'CoursesService', UsersCoursesCtrl ] );
+
+    UsersModule.controller( 'UsersEditCtrl', [ '$scope', 'UsersService', 'SessionsService', UsersEditCtrl ] );
 
     UsersModule.controller( 'UsersFormCtrl', [ UsersFormCtrl ] );
 

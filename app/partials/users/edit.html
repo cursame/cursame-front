@@ -9,31 +9,31 @@
             <div class="form-group">
                 <label for="name" class="col-sm-3 control-label">{{ 'forms.label.name' | translate }}:</label>
                 <div class="col-sm-9">
-                    <input type="text" id="name" class="form-control" name="name" placeholder="{{ 'forms.label.name' | translate }}">
+                    <input type="text" id="name" class="form-control" name="name" placeholder="{{ 'forms.label.name' | translate }}" ng-model="user.name">
                 </div>
             </div>
             <div class="form-group">
                 <label for="last-name" class="col-sm-3 control-label">{{ 'forms.label.last_name' | translate }}:</label>
                 <div class="col-sm-9">
-                    <input type="text" id="last-name" class="form-control" name="last-name" placeholder="{{ 'forms.label.last_name' | translate }}">
+                    <input type="text" id="last-name" class="form-control" name="last-name" placeholder="{{ 'forms.label.last_name' | translate }}" ng-model="user.last_name">
                 </div>
             </div>
             <div class="form-group">
                 <label for="biography" class="col-sm-3 control-label">{{ 'forms.label.biography' | translate }}:</label>
                 <div class="col-sm-9">
-                    <textarea id="biography" class="form-control" name="biography" rows="4" placeholder="{{ 'forms.label.biography' | translate }}"></textarea>
+                    <textarea id="biography" class="form-control" name="biography" rows="4" placeholder="{{ 'forms.label.biography' | translate }}" ng-model="user.biography"></textarea>
                 </div>
             </div>
             <div class="form-group">
                 <label for="email" class="col-sm-3 control-label">{{ 'forms.label.email' | translate }}:</label>
                 <div class="col-sm-9">
-                    <input type="email" id="email" class="form-control" name="email" placeholder="{{ 'forms.label.email' | translate }}">
+                    <input type="email" id="email" class="form-control" name="email" placeholder="{{ 'forms.label.email' | translate }}" ng-model="user.email">
                 </div>
             </div>
             <div class="form-group">
                 <label for="twitter" class="col-sm-3 control-label">{{ 'forms.label.twitter' | translate }}:</label>
                 <div class="col-sm-9">
-                    <input type="text" id="twitter" class="form-control" name="twitter" placeholder="{{ 'forms.placeholder.twitter' | translate }}">
+                    <input type="text" id="twitter" class="form-control" name="twitter" placeholder="{{ 'forms.placeholder.twitter' | translate }}" ng-model="user.twitter">
                 </div>
             </div>
             <div class="form-group">
@@ -41,7 +41,7 @@
                 <div class="col-sm-9">
                     <div class="input-group">
                         <span class="input-group-addon"><small>http://cursa.me/users/</small></span>
-                        <input type="text" id="url" class="form-control" name="url">
+                        <input type="text" id="url" class="form-control" name="url" ng-model="user.url">
                     </div>
                     <p class="help-block"><small>{{ 'forms.help.personalized_url' | translate }}</small></p>
                 </div>

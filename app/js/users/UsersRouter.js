@@ -53,7 +53,8 @@ define( function () {
                 url         : '/user/edit',
                 views       : {
                     'main-container'    : {
-                        templateUrl     : 'partials/users/edit.html'
+                        templateUrl     : 'partials/users/edit.html',
+                        controller      : 'UsersEditCtrl'
                     }
                 }
             })
