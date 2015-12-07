@@ -15,7 +15,7 @@ define( function () {
             url         : 'jdoe'
         },
         {
-            avatar      : 'https://s3.amazonaws.com/uifaces/faces/twitter/BillSKenney/128.jpg',
+            avatar      : 'https://s3.amazonaws.com/uifaces/faces/twitter/yemaija/128.jpg',
             biography   : 'Lorem ipsum dolor sit amet.',
             cover       : 'https://cursame.s3.amazonaws.com/uploads/user/coverphoto/56170.png/234985.jpg',
             email       : 'jane.doe@gmail.com',

@@ -6,27 +6,22 @@ define( function ( require ) {
             paths   = url.split( '/' ),
             param   = paths[2],
             user    = {},
-            error   = false,
             id      = parseInt( param );
 
         if ( !isNaN( id ) ) {
-            switch ( id ) {
-                case 1 :
-                    user        = users[0];
-                    break;
-                default :
-                    error       = true;
+            for ( var i = 0; i < users.length; i++ ) {
+                if ( users[i].id == id ) {
+                    user    = users[i];
+                }
             }
         } else {
-            switch ( param ) {
-                case 'jdoe' :
-                    user        = users[0];
-                    break;
-                default :
-                    error       = true;
+            for ( var i = 0; i < users.length; i++ ) {
+                if ( users[i].url == param ) {
+                    user    = users[i];
+                }
             }
         }
 
-        return ( error ) ? [ 403 ] : [ 200, user ];
+        return [ 200, user ];
     };
 });

@@ -22,6 +22,6 @@ define( function ( require ) {
         $httpBackend.whenDELETE( new RegExp( '\\/sessions\\/[0-9]+' ) ).respond( MocksSessionEnd );
 
         $httpBackend.whenGET( new RegExp( '\\/users\\/[0-9]+' ) ).respond( MocksUsersGet );
-        $httpBackend.whenGET( new RegExp( '\\/users\\/[a-z]+' ) ).respond( MocksUsersGet );
+        $httpBackend.whenGET( new RegExp( '\\/users\\/[A-Za-z0-9_@./#&+-]+' ) ).respond( MocksUsersGet );
     };
 });
