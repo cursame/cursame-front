@@ -7,7 +7,7 @@
 *****************************/
 html, body                      { height: 100%; font-family: "Open Sans"; font-size: 13px; line-height: 1.8em; }
 body                            { padding-top: 50px; }
-.body-container                 { background-color: #eaecf0; }
+.body-container                 { background-color: #eaecf0; height: 100%; }
 a, a:hover, a:focus, a:visited  { outline: 0; text-decoration: none; }
 img                             { max-width: 100%; max-height: 100%; }
 ul                              { padding-left: 0; list-style: none; }
@@ -119,6 +119,10 @@ h2                              { margin-bottom: 20px; font-size: 16px; font-wei
 .section-body                   { margin-bottom: 50px; }
 .section-header h1              { margin: 0; }
 .form-buttons                   { margin-top: 60px; overflow: hidden; }
+.state-header                   { background-color: #fff; border: 1px solid #d6d8db; border-top: none; position: relative; border-radius: 0 0 5px 5px; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.035); }
+.state-header h1                { margin-top: 0; margin-bottom: 0; padding: 10px; }
+.state-header h1 > .glyphicon   { margin-right: 10px; padding: 10px; background-color: #0375b0; font-size: 24px; color: #fff; border-radius: 3px; }
+.state-header .btn              { position: absolute; top: 17px; right: 10px; }
 
 /*****************************
     USER PROFILE STYLES
@@ -160,6 +164,7 @@ h2                              { margin-bottom: 20px; font-size: 16px; font-wei
 .user-widget .footer            { background-color: #fcfcfc; border-top: 1px solid #d6d8db; overflow: hidden; border-radius: 0 0 5px 5px; }
 .user-widget .footer .btn       { margin-right: 10px; }
 .publications-state             { margin-top: 20px; }
+.courses-state                  { height: 100%; }
 .homework-criteria              { margin-bottom: 15px; position: relative; }
 .homework-criteria .glyphicon   { display: none; position: absolute; right: 10px; top: 50%; cursor: pointer; transform: translateY(-50%); transition: all ease-in 0.3s; }
 .question-item                  { margin-bottom: 15px; position: relative; }

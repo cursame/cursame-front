@@ -3,13 +3,12 @@
 define( function () {
     return function ( $stateProvider ) {
         $stateProvider
-            .state( 'home', {
+            .state( 'courses', {
                 parent  : 'dashboard',
-                url     : '/',
+                url     : '/courses',
                 views   : {
                     'main-container'    : {
-                        templateUrl     : 'partials/publications/publications.html',
-                        controller      : 'PublicationsCtrl'
+                        templateUrl     : 'partials/courses/courses.html'
                     }
                 }
             });
