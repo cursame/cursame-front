@@ -58,6 +58,15 @@ define( function () {
                     }
                 }
             })
+            .state( 'user_friends', {
+                parent      : 'user_base',
+                url         : '/:profile/friends',
+                views       : {
+                    'profile-content'   : {
+                        templateUrl     : 'partials/users/friends.html'
+                    }
+                }
+            })
             .state( 'user_base', {
                 abstract    : true,
                 parent      : 'dashboard',

@@ -154,6 +154,8 @@ h2                              { margin-bottom: 20px; font-size: 16px; font-wei
 .user-widget .panel             { display: none; margin-bottom: 0; background-color: transparent; border: none; border-radius: 0; box-shadow: none; }
 .user-widget .panel.active      { display: block; }
 .user-widget .likes             { margin-bottom: 0; }
+.user-widget.friends img        { width: 80px; margin-right: 10px; float: left; }
+.user-widget.friends p          { width: ~"calc(100% - 90px)"; position: absolute; left: 110px; top: 50%; transform: translateY(-50%); }
 .user-widget .footer            { background-color: #fcfcfc; border-top: 1px solid #d6d8db; overflow: hidden; border-radius: 0 0 5px 5px; }
 .user-widget .footer .btn       { margin-right: 10px; }
 .publications-state             { margin-top: 20px; }
@@ -187,6 +189,7 @@ h2                              { margin-bottom: 20px; font-size: 16px; font-wei
 .user-widget .header.active-3:before                    { left: 362px; }
 .user-widget .header.active-4:after,
 .user-widget .header.active-4:before                    { left: 450px; }
+.user-widget.friends .body:after                        { display: table; content: " "; clear: both; }
 .user-widget .footer .btn:first-child                   { margin-right: 0; }
 .user-widget .form-group:last-child                     { margin-bottom: 0; }
 

@@ -15,6 +15,7 @@
     "base.label.unblocking_instructions"    : "Didn't get the unblocking instructions?",
     "buttons.correct"                       : "Correct",
     "buttons.edit_profile"                  : "Edit Profile",
+    "buttons.friends"                       : "Friends",
     "buttons.remove"                        : "Remove",
     "date.just_now"                         : "just now",
     "date.seconds_ago"                      : "{{time}} seconds ago",

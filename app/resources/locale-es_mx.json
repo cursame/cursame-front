@@ -15,6 +15,7 @@
     "base.label.unblocking_instructions"    : "¿No recibiste las instrucciones de desbloqueo?",
     "buttons.correct"                       : "Correcta",
     "buttons.edit_profile"                  : "Editar Perfil",
+    "buttons.friends"                       : "Amigos",
     "buttons.remove"                        : "Eliminar",
     "date.just_now"                         : "hace un momento",
     "date.seconds_ago"                      : "hace {{time}} segundos",
