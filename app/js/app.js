@@ -6,6 +6,7 @@ define( function ( require ) {
     require( 'events' );
     require( 'comments/CommentsModule' );
     require( 'common/CommonModule' );
+    require( 'courses/CoursesModule' );
     require( 'dashboard/DashboardModule' );
     require( 'mocks/MocksModule' );
     require( 'publications/PublicationsModule' );
@@ -22,6 +23,7 @@ define( function ( require ) {
             'events',
             'CommentsModule',
             'CommonModule',
+            'CoursesModule',
             'DashboardModule',
             'MocksModule',
             'PublicationsModule',
