@@ -7,6 +7,15 @@ define( function () {
             biography   : 'Computólogo modelo \'89, si te acostumbras no soy tan feo.',
             cover       : 'https://cursame.s3.amazonaws.com/uploads/user/coverphoto/56170.png/234985.jpg',
             email       : 'admin@cursa.me',
+            friends     : [
+                {
+                    avatar      : 'https://s3.amazonaws.com/uifaces/faces/twitter/yemaija/128.jpg',
+                    id          : 2,
+                    last_name   : 'Doe',
+                    name        : 'Jane',
+                    url         : 'jane.doe'
+                }
+            ],
             id          : 1,
             last_name   : 'Doe',
             name        : 'John',
@@ -19,6 +28,15 @@ define( function () {
             biography   : 'Lorem ipsum dolor sit amet.',
             cover       : 'https://cursame.s3.amazonaws.com/uploads/user/coverphoto/56170.png/234985.jpg',
             email       : 'jane.doe@gmail.com',
+            friends     : [
+                {
+                    avatar      : 'https://s3.amazonaws.com/uifaces/faces/twitter/BillSKenney/128.jpg',
+                    id          : 1,
+                    last_name   : 'Doe',
+                    name        : 'John',
+                    url         : 'jdoe'
+                }
+            ],
             id          : 2,
             last_name   : 'Doe',
             name        : 'Jane',
