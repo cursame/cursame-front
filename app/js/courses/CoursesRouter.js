@@ -12,6 +12,15 @@ define( function () {
                         controller      : 'CoursesList'
                     }
                 }
+            })
+            .state( 'courses.add', {
+                parent  : 'dashboard',
+                url     : '/courses/add',
+                views   : {
+                    'main-container'    : {
+                        templateUrl     : 'partials/courses/add.html'
+                    }
+                }
             });
     };
 });
