@@ -103,8 +103,7 @@ define( function () {
                 url         : '/:profile/info',
                 views       : {
                     'profile-content'   : {
-                        templateUrl     : 'partials/users/info.html',
-                        controller      : 'UsersInfoCtrl'
+                        templateUrl     : 'partials/users/info.html'
                     }
                 }
             });
