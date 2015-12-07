@@ -40,6 +40,10 @@ h2                              { margin-bottom: 20px; font-size: 16px; font-wei
 .course-item .inner h5 > a      { color: #fff; }
 .question-item > .glyphicon,
 .homework-criteria .glyphicon   { color: #999; }
+.app-submenu > li > a           { font-size: 12px; font-weight: 600; color: #0375b0; }
+.app-submenu > li.active > a    { color: #999; }
+.app-submenu > li > a:hover     { color: #0496e2; text-decoration: none; }
+.app-submenu > .active > a:hover                            { color: #999; }
 .question-item .question-footer span                        { line-height: 35px; color: #337ab7; cursor: pointer; }
 
 /*****************************
@@ -125,14 +129,11 @@ h2                              { margin-bottom: 20px; font-size: 16px; font-wei
 #user-banner .btn               { padding: 6px; font-size: 10px; font-weight: bold; position: absolute; bottom: 10px; right: 15px; }
 #user-avatar                    { width: 128px; height: 128px; padding: 3px; border-radius: 4px; background-color: #fff; position: absolute; left: 15px; bottom: 10px; }
 #user-avatar img                { border-radius: 2px; box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.15), 0px 1px 3px rgba(0, 0, 0, 0.18); }
-.user-menu                      { margin-bottom: 0; padding-left: 0; border-top: 1px solid #d6d8db; list-style: none; overflow: hidden; }
-.user-menu > li                 { display: inline-block; padding: 8px 15px; float: left; border-right: 1px solid #d6d8db; cursor: pointer; }
-.user-menu > li:first-child     { border-radius: 0 0 0 5px; }
-.user-menu > li.active          { background-color: #fafafa; border-bottom: 1px solid #0f85b9; }
-.user-menu > li.active > a      { color: #999; }
-.user-menu > li > a             { display: block; font-size: 12px; font-weight: 600; color: #0375b0; }
-.user-menu > li > a:hover       { color: #0496e2; text-decoration: none; }
-.user-menu > .active > a:hover  { color: #999; }
+.app-submenu                    { margin-bottom: 0; padding-left: 0; border-top: 1px solid #d6d8db; list-style: none; overflow: hidden; }
+.app-submenu > li               { display: inline-block; padding: 8px 15px; float: left; border-right: 1px solid #d6d8db; cursor: pointer; }
+.app-submenu > li:first-child   { border-radius: 0 0 0 5px; }
+.app-submenu > li.active        { background-color: #fafafa; border-bottom: 1px solid #0f85b9; }
+.app-submenu > li > a           { display: block; }
 #profile-content                { margin-top: 20px; }
 .user-widget                    { margin-bottom: 20px; background-color: #fff; border: 1px solid #d6d8db; border-radius: 5px; box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.035); }
 .user-widget > .header,
