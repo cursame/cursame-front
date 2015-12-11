@@ -93,7 +93,7 @@ define( function () {
                 url         : '/:profile',
                 views       : {
                     'profile-content'   : {
-                        templateUrl     : 'partials/users/publish.html',
+                        templateUrl     : 'partials/users/publications.html',
                         controller      : 'UsersPublicationsCtrl'
                     }
                 }
