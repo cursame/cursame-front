@@ -4,7 +4,7 @@
             <div id="user-avatar">
                 <a ui-sref="user_profile({ profile : user.url })"><img ng-src="{{ user.avatar }}" alt="{{ user.name + ' ' + user.last_name }}"></a>
             </div>
-            <a class="btn btn-default" ui-sref="user_edit">{{ 'buttons.edit_profile' | translate }}</a>
+            <a ng-if="user.id == me.id" class="btn btn-default" ui-sref="user_edit">{{ 'buttons.edit_profile' | translate }}</a>
         </div>
         <div class="profile-container">
             <h1>{{ user.name + ' ' + user.last_name }}</h1>
