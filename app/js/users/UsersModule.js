@@ -15,7 +15,7 @@ define( function ( require ) {
 
     UsersModule.controller( 'UsersCoursesCtrl', [ '$scope', '$stateParams', 'CoursesService', UsersCoursesCtrl ] );
 
-    UsersModule.controller( 'UsersEditCtrl', [ '$scope', 'UsersService', 'SessionsService', UsersEditCtrl ] );
+    UsersModule.controller( 'UsersEditCtrl', [ '$scope', 'events', 'UsersService', 'SessionsService', UsersEditCtrl ] );
 
     UsersModule.controller( 'UsersFormCtrl', [ UsersFormCtrl ] );
 

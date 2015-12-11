@@ -1,8 +1,10 @@
 {
     "alerts.error.login"                    : "Verify your credentials and try again.",
+    "alerts.error.user_update"              : "There was an error updating your information",
     "alerts.login.success"                  : "Session started. Welcome back!",
     "alerts.logout.success"                 : "Your session has been finished.",
     "alerts.questionary.empty"              : "The questionary must have at least one question.",
+    "alerts.success.user_update"            : "Your information has been successfully updated!",
     "base.label.add_answer"                 : "Add answer",
     "base.label.already_member"             : "Already an user? Log in",
     "base.label.confirmation_instructions"  : "Didn't get the confirmation instructions?",
