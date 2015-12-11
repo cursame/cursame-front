@@ -6,6 +6,7 @@ define( function ( require ) {
     var MocksPublicationsQuery  = require( 'mocks/MocksPublicationsQuery' );
     var MocksSessionEnd         = require( 'mocks/MocksSessionEnd' );
     var MocksSessionStart       = require( 'mocks/MocksSessionStart' );
+    var MocksUsersUpdate        = require( 'mocks/MocksUsersUpdate' );
     var MocksUsersGet           = require( 'mocks/MocksUsersGet' );
 
     return function ( $httpBackend ) {
@@ -23,5 +24,6 @@ define( function ( require ) {
 
         $httpBackend.whenGET( new RegExp( '\\/users\\/[0-9]+' ) ).respond( MocksUsersGet );
         $httpBackend.whenGET( new RegExp( '\\/users\\/[A-Za-z0-9_@./#&+-]+' ) ).respond( MocksUsersGet );
+        $httpBackend.whenPUT( new RegExp( '\\/users\\/[0-9]+' ) ).respond( MocksUsersUpdate );
     };
 });
