@@ -8,5 +8,5 @@ define( function ( require ) {
 
     DashboardModule.config([ '$stateProvider', DashboardRouter ]);
 
-    DashboardModule.controller( 'DashboardBaseCtrl', [ '$scope', 'SessionsService', 'UsersService', DashboardBaseCtrl ] );
+    DashboardModule.controller( 'DashboardBaseCtrl', [ '$rootScope', 'SessionsService', 'UsersService', DashboardBaseCtrl ] );
 });

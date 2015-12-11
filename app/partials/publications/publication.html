@@ -24,7 +24,7 @@
         </div>
         <div class="row">
             <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 comment-form">
-                <a class="avatar" ui-sref="user_profile({ profile : user.url })" ui-sref-opts="{ reload: true }"><img class="user-avatar" ng-src="{{ user.avatar }}" alt="{{ user.name + ' ' + user.last_name }}"></a>
+                <a class="avatar" ui-sref="user_profile({ profile : me.url })" ui-sref-opts="{ reload: true }"><img class="user-avatar" ng-src="{{ me.avatar }}" alt="{{ me.name + ' ' + me.last_name }}"></a>
                 <input type="text" name="comment" class="form-control" placeholder="{{ 'forms.placeholder.write_comment' | translate }}">
                 <button type="button" class="btn btn-default btn-upload"><span class="glyphicon glyphicon-paperclip"></span></button>
             </div>

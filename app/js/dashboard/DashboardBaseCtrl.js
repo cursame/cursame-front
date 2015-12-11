@@ -1,9 +1,9 @@
 'use strict';
 
 define( function () {
-    return function ( $scope, Sessions, Users ) {
+    return function ( $rootScope, Sessions, Users ) {
         $( 'body' ).removeClass( 'login-state' );
 
-        $scope.user     = Users.get( Sessions.getUserId() );
+        $rootScope.me   = Users.get( Sessions.getUserId() );
     };
 });
