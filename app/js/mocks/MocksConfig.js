@@ -3,6 +3,7 @@
 define( function ( require ) {
     var MocksCommentsQuery      = require( 'mocks/MocksCommentsQuery' );
     var MocksCoursesQuery       = require( 'mocks/MocksCoursesQuery' );
+    var MocksPublicationsCreate = require( 'mocks/MocksPublicationsCreate' );
     var MocksPublicationsQuery  = require( 'mocks/MocksPublicationsQuery' );
     var MocksSessionEnd         = require( 'mocks/MocksSessionEnd' );
     var MocksSessionStart       = require( 'mocks/MocksSessionStart' );
@@ -18,6 +19,7 @@ define( function ( require ) {
         $httpBackend.whenGET( /\/courses/ ).respond( MocksCoursesQuery );
 
         $httpBackend.whenGET( /\/publications/ ).respond( MocksPublicationsQuery );
+        $httpBackend.whenPOST( /\/publications/ ).respond( MocksPublicationsCreate );
 
         $httpBackend.whenPOST( '/sessions' ).respond( MocksSessionStart );
         $httpBackend.whenDELETE( new RegExp( '\\/sessions\\/[0-9]+' ) ).respond( MocksSessionEnd );
