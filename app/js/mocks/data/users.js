@@ -19,6 +19,7 @@ define( function () {
             id          : 1,
             last_name   : 'Doe',
             name        : 'John',
+            password    : 'admin',
             twitter     : 'https://twitter.com/jdoe',
             type        : 'superadmin',
             url         : 'jdoe'
@@ -40,6 +41,7 @@ define( function () {
             id          : 2,
             last_name   : 'Doe',
             name        : 'Jane',
+            password    : 'jane.doe',
             twitter     : 'https://twitter.com/jane.doe',
             type        : 'student',
             url         : 'jane.doe'
