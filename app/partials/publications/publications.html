@@ -12,8 +12,8 @@
                 </div>
                 <div class="body">
                     <div id="panel-comment" class="panel active">
-                        <form>
-                            <textarea id="comment" class="form-control" name="comment" placeholder="{{ 'forms.placeholder.leave_comment' | translate }}"></textarea>
+                        <form ng-submit="publish()">
+                            <textarea id="comment" class="form-control" name="comment" placeholder="{{ 'forms.placeholder.leave_comment' | translate }}" ng-model="comment"></textarea>
                         </form>
                     </div>
                     <div id="panel-homework" class="panel">
@@ -197,7 +197,7 @@
                     </div>
                 </div>
                 <div class="footer">
-                    <button type="button" class="btn btn-primary pull-right">{{ 'forms.button.comment' | translate }}</button>
+                    <button type="button" class="btn btn-primary pull-right" ng-click="publish()">{{ 'forms.button.comment' | translate }}</button>
                     <button type="button" class="btn btn-default pull-right"><span class="glyphicon glyphicon-paperclip"></span>{{ 'forms.button.file' | translate }}</button>
                 </div>
             </div>
