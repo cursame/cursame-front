@@ -4,6 +4,7 @@
     "alerts.login.success"                  : "Session started. Welcome back!",
     "alerts.logout.success"                 : "Your session has been finished.",
     "alerts.questionary.empty"              : "The questionary must have at least one question.",
+    "alerts.success.publication_created"    : "Your publication has been successfully created!",
     "alerts.success.user_update"            : "Your information has been successfully updated!",
     "base.label.add_answer"                 : "Add answer",
     "base.label.already_member"             : "Already an user? Log in",
