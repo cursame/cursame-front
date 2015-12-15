@@ -4,7 +4,7 @@ define( function ( require ) {
     return function ( $rootScope, $timeout, events ) {
         return {
             restrict    : 'EA',
-            templateUrl : 'partials/alert.html',
+            templateUrl : 'partials/common/alert.html',
             link        : function ( scope, elm, attrs ) {
                 scope.dismiss   = function () {
                     elm.slideUp();
