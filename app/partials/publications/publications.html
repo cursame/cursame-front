@@ -118,26 +118,20 @@
                             <div class="form-group">
                                 <label for="time" class="col-sm-3 control-label">{{ 'forms.label.resolution_time' | translate }}:</label>
                                 <div class="col-sm-9">
-                                    <div class="dropdown">
-                                        <button type="button" id="resolution-dropdown" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                            <span class="value">{{ 'forms.option.no_time_limit' | translate }}</span>
-                                            <span class="caret"></span>
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li class="active">{{ 'forms.option.no_time_limit' | translate }}</li>
-                                            <li>180 min</li>
-                                            <li>120 min</li>
-                                            <li>80 min</li>
-                                            <li>60 min</li>
-                                            <li>50 min</li>
-                                            <li>40 min</li>
-                                            <li>30 min</li>
-                                            <li>20 min</li>
-                                            <li>10 min</li>
-                                            <li>5 min</li>
-                                            <li>1 min</li>
-                                        </ul>
-                                    </div>
+                                    <cursame-select value="questionary.time">
+                                        <option value="0">{{ 'forms.option.no_time_limit' | translate }}</option>
+                                        <option value="180">180 min</option>
+                                        <option value="120">120 min</option>
+                                        <option value="80">80 min</option>
+                                        <option value="60">60 min</option>
+                                        <option value="50">50 min</option>
+                                        <option value="40">40 min</option>
+                                        <option value="30">30 min</option>
+                                        <option value="20">20 min</option>
+                                        <option value="10">10 min</option>
+                                        <option value="5">5 min</option>
+                                        <option value="1">1 min</option>
+                                    </cursame-select>
                                 </div>
                             </div>
                             <div class="form-group">

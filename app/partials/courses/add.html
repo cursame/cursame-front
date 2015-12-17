@@ -18,16 +18,10 @@
                 <div class="form-group">
                     <label for="privacy" class="col-sm-3 control-label">{{ 'forms.label.privacy' | translate }}:</label>
                     <div class="col-sm-9">
-                        <div class="dropdown">
-                            <button type="button" id="resolution-dropdown" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                <span class="value">{{ 'forms.option.public' | translate }}</span>
-                                <span class="caret"></span>
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li class="active">{{ 'forms.option.public' | translate }}</li>
-                                <li>{{ 'forms.option.private' | translate }}</li>
-                            </ul>
-                        </div>
+                        <cursame-select value="course.access">
+                            <option value="public">{{ 'forms.option.public' | translate }}</option>
+                            <option value="private">{{ 'forms.option.private' | translate }}</option>
+                        </cursame-select>
                     </div>
                 </div>
                 <div class="form-group">
