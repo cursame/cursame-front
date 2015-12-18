@@ -1,7 +1,7 @@
 'use strict';
 
 define( function () {
-    return function ( $scope, events, Publications ) {
+    return function ( $scope, events, Locale, Publications ) {
         var type    = 'comment';
 
         $scope.panel        = function ( e, id ) {
@@ -47,6 +47,7 @@ define( function () {
         $( '.datepicker' ).datepicker({
             autoclose       : true,
             format          : 'mm/dd/yyyy',
+            language        : Locale.getCurrent(),
             todayHighlight  : true
         }).on( 'hide', function ( e ) {
             e.stopPropagation();

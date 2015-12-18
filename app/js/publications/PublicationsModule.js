@@ -13,7 +13,7 @@ define( function ( require ) {
 
     PublicationsModule.config([ '$stateProvider', PublicationsRouter ]);
 
-    PublicationsModule.controller( 'PublicationsCtrl', [ '$scope', 'events', 'PublicationsService', PublicationsCtrl ] );
+    PublicationsModule.controller( 'PublicationsCtrl', [ '$scope', 'events', 'LocaleService', 'PublicationsService', PublicationsCtrl ] );
 
     PublicationsModule.directive( 'cursameCriterion', [ CriteriaDirective ] );
 
