@@ -8,7 +8,7 @@ define( function () {
                 comment : '=comment'
             },
             templateUrl : 'partials/comments/comment.html',
-            link        : function ( scope ) {}
+            link        : function () {}
         };
     };
 });

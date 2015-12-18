@@ -9,7 +9,7 @@ define( function () {
 
             type        = id;
             $('[class*="header active-"]').removeClass(function( i, c ) {
-                return c.match( /active-\d+/g ).join( " " );
+                return c.match( /active-\d+/g ).join( ' ' );
             });
             $( '.header' ).addClass( 'active-' + item.index() );
             $( '.panel.active' ).removeClass( 'active' );

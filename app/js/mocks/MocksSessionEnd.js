@@ -1,7 +1,7 @@
 'use strict';
 
 define( function () {
-    return function ( method, url, params ) {
+    return function () {
         return [ 200, {} ];
     };
 });

@@ -23,9 +23,9 @@ define( function () {
                     console.error( 'Locale name "' + locale + '" is invalid' );
                     return;
                 }
-                currentLocale = locale;// updating current locale
+                currentLocale = locale;
 
-                $translate.use( locale );
+                $translate.use( locale );
             };
 
         $rootScope.$on( '$translateChangeSuccess', function ( event, data ) {

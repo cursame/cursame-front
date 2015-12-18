@@ -1,11 +1,11 @@
 'use strict';
 
-define( function ( require ) {
+define( function () {
     return function ( $rootScope, $timeout, events ) {
         return {
             restrict    : 'EA',
             templateUrl : 'partials/common/alert.html',
-            link        : function ( scope, elm, attrs ) {
+            link        : function ( scope, elm ) {
                 scope.dismiss   = function () {
                     elm.slideUp();
                     scope.msg   = '';
@@ -25,6 +25,6 @@ define( function ( require ) {
                     scope.msg      = data.msg;
                 });
             }
-        }
+        };
     };
 });

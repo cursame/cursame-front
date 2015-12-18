@@ -1,7 +1,7 @@
 'use strict';
 
 define( function ( require ) {
-    return function ( method, url, params ) {
+    return function ( method, url ) {
         var users   = require( 'mocks/data/users' ),
             paths   = url.split( '/' ),
             param   = paths[2],
@@ -15,9 +15,9 @@ define( function ( require ) {
                 }
             }
         } else {
-            for ( var i = 0; i < users.length; i++ ) {
-                if ( users[i].url == param ) {
-                    user    = users[i];
+            for ( var j = 0; j < users.length; j++ ) {
+                if ( users[j].url == param ) {
+                    user    = users[j];
                 }
             }
         }

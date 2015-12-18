@@ -68,11 +68,11 @@ define( function ( require ) {
         });
 
         $.queryParam    = function ( url, param ) {
-            param       = param.replace( /[\[]/, "\\[" ).replace( /[\]]/, "\\]" );
-            var regex   = new RegExp( "[\\?&]" + param + "=([^&#]*)" ),
+            param       = param.replace( /[\[]/, '\\[' ).replace( /[\]]/, '\\]' );
+            var regex   = new RegExp( '[\\?&]' + param + '=([^&#]*)' ),
                 results = regex.exec( url );
 
-            return results === null ? "" : decodeURIComponent( results[1].replace( /\+/g, " " ) );
+            return results === null ? '' : decodeURIComponent( results[1].replace( /\+/g, ' ' ) );
         };
     }]);
 

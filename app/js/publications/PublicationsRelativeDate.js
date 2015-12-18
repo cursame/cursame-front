@@ -3,37 +3,37 @@
 define( function () {
     return function ( $translate ) {
         return function ( date ) {
-            var calculateDelta  = function ( now, date ) {
-                    return Math.round( Math.abs( now - date ) / 1000 );
-                },
-                translate       = function( translatePhrase, timeValue ) {
-                    var translateKey;
-                    if ( translatePhrase === 'date.just_now' ) {
-                        translateKey    = translatePhrase;
-                    } else if ( now >= date ) {
-                        translateKey    = "" + translatePhrase + "_ago";
-                    } else {
-                        translateKey    = "" + translatePhrase + "_from_now";
-                    }
+            var calculateDelta  = function ( now, ref ) {
+                    return Math.round( Math.abs( now - ref ) / 1000 );
+                };
 
-                    return $translate.instant( translateKey, {
-                        time    : timeValue
-                    });
-                },
-                now             = new Date(),
-                date            = ( date instanceof Date ) ? date : new Date( date ),
-                delta           = null,
+            var now             = new Date(),
+                reference       = date instanceof Date ? date : new Date( date ),
                 minute          = 60,
                 hour            = minute * 60,
                 day             = hour * 24,
                 week            = day * 7,
                 month           = day * 30,
                 year            = day * 365,
-                delta           = calculateDelta( now, date );
+                delta           = calculateDelta( now, reference ),
+                translate       = function( translatePhrase, timeValue ) {
+                    var translateKey;
+                    if ( translatePhrase === 'date.just_now' ) {
+                        translateKey    = translatePhrase;
+                    } else if ( now >= reference ) {
+                        translateKey    = '' + translatePhrase + '_ago';
+                    } else {
+                        translateKey    = '' + translatePhrase + '_from_now';
+                    }
+
+                    return $translate.instant( translateKey, {
+                        time    : timeValue
+                    });
+                };
 
             if ( delta > day && delta < week ) {
-                date    = new Date( date.getFullYear(), date.getMonth(), date.getDate(), 0, 0, 0 );
-                delta   = calculateDelta( now, date );
+                reference   = new Date( reference.getFullYear(), reference.getMonth(), reference.getDate(), 0, 0, 0 );
+                delta       = calculateDelta( now, reference );
             }
 
             switch ( false ) {

@@ -1,6 +1,6 @@
 'use strict';
 
-define( function ( require ) {
+define( function () {
     return function ( $rootScope, $resource, config, events ) {
         function BaseService( model ) {
             this._model     = '';
@@ -8,7 +8,7 @@ define( function ( require ) {
             this._resource  = null;
 
             return this._init( model );
-        };
+        }
 
         BaseService.prototype   = {
             _init       : function ( model ) {
@@ -18,7 +18,7 @@ define( function ( require ) {
                     query   : {
                         method              : 'GET',
                         isArray             : true,
-                        transformResponse   : function ( data, headers ) {
+                        transformResponse   : function ( data ) {
                             var response    = angular.fromJson( data );
 
                             that._total     = response.pagination.total;
@@ -38,7 +38,9 @@ define( function ( require ) {
                 var that    = this;
                 return this._resource.save( object,
                     function ( data ) {
-                        while ( !data.$resolved );
+                        while ( !data.$resolved ) {
+                            // Resolving
+                        }
 
                         $rootScope.$broadcast( events[ that._model.toUpperCase() + '_CREATE' ], data );
                     },
@@ -56,7 +58,9 @@ define( function ( require ) {
                     expanded    : expand
                 },
                     function ( data ) {
-                        while ( !data.$resolved );
+                        while ( !data.$resolved ) {
+                            // Resolving
+                        }
 
                         $rootScope.$broadcast( events[ that._model.toUpperCase() + '_RETRIEVED' ], data );
                     },
@@ -71,22 +75,16 @@ define( function ( require ) {
                 switch ( type ) {
                     case 'CREATE' :
                         return events[ this._model.toUpperCase() + '_CREATE' ];
-                        break;
                     case 'DELETE' :
                         return events[ this._model.toUpperCase() + '_DELETE' ];
-                        break;
                     case 'ERROR' :
                         return events[ this._model.toUpperCase() + '_ERROR' ];
-                        break;
                     case 'QUERY' :
                         return events[ this._model.toUpperCase() + '_QUERY' ];
-                        break;
                     case 'RETRIEVED' :
                         return events[ this._model.toUpperCase() + '_RETRIEVED' ];
-                        break;
                     case 'UPDATED' :
                         return events[ this._model.toUpperCase() + '_UPDATED' ];
-                        break;
                     default :
                         return '';
                 }
@@ -101,7 +99,9 @@ define( function ( require ) {
 
                 return this._resource.query( q,
                     function ( data ) {
-                        while ( !data.$resolved );
+                        while ( !data.$resolved ) {
+                            // Resolving
+                        }
 
                         $rootScope.$broadcast( events[ that._model.toUpperCase() + '_QUERY' ], data );
                     },
@@ -119,7 +119,9 @@ define( function ( require ) {
                     id  : id
                 },
                     function ( data ) {
-                        while ( !data.$resolved );
+                        while ( !data.$resolved ) {
+                            // Resolving
+                        }
 
                         $rootScope.$broadcast( events[ that._model.toUpperCase() + '_DELETE' ], data );
                     },
@@ -130,14 +132,16 @@ define( function ( require ) {
                 );
             },
 
-            update      : function ( id, data ) {
+            update      : function ( id, obj ) {
                 var that    = this;
 
                 return this._resource.update({
-                    id          : id,
-                }, data,
+                    id          : id
+                }, obj,
                     function ( data ) {
-                        while ( !data.$resolved );
+                        while ( !data.$resolved ) {
+                            // Resolving
+                        }
 
                         $rootScope.$broadcast( events[ that._model.toUpperCase() + '_UPDATED' ], data );
                     },

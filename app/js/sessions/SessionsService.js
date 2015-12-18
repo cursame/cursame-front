@@ -1,28 +1,30 @@
 'use strict';
 
-define( function ( require ) {
+define( function () {
     return function ( $rootScope, $resource, $cookies, config, events ) {
         return {
             _resource   : $resource( config.api_url + 'sessions/:id' ),
 
             isLoggedIn  : function () {
-                return ( $cookies.getObject( 'session' ) ) ? true : false;
+                return $cookies.getObject( 'session' ) ? true : false;
             },
 
             getToken    : function () {
                 var session = $cookies.getObject( 'session' );
-                return ( session ) ? session.token : null;
+                return session ? session.token : null;
             },
 
             getUserId   : function () {
                 var session = $cookies.getObject( 'session' );
-                return ( session ) ? session.user_id : null;
+                return session ? session.user_id : null;
             },
 
             start       : function ( credentials ) {
                 return this._resource.save( credentials,
                     function ( data ) {
-                        while ( !data.$resolved );
+                        while ( !data.$resolved ) {
+                            // Resolving
+                        }
 
                         $cookies.putObject( 'session', {
                             token   : data.session,
@@ -32,7 +34,7 @@ define( function ( require ) {
 
                         $rootScope.$broadcast( events.LOGIN_SUCCESS, data );
                     },
-                    function ( err ) {
+                    function () {
                         $rootScope.$broadcast( events.LOGIN_ERROR );
                     });
             },
@@ -42,12 +44,14 @@ define( function ( require ) {
                         id  : token
                     },
                     function ( data ) {
-                        while ( !data.$resolved );
+                        while ( !data.$resolved ) {
+                            // Resolving
+                        }
 
                         $cookies.remove( 'session' );
                         $rootScope.$broadcast( events.LOGOUT_SUCCESS );
                     },
-                    function ( err ) {
+                    function () {
                         $rootScope.$broadcast( events.LOGOUT_ERROR );
                     });
             }

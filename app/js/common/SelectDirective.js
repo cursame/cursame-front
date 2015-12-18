@@ -18,7 +18,7 @@ define( function () {
                     scope.value     = elm.data( 'value' );
                 };
 
-                $( 'option' ).each( function ( i ) {
+                $( 'option' ).each( function () {
                     var item    = $( this ),
                         elm     = '<li data-value="' + item.attr( 'value' ) + '" ng-click="select( $event )">' + item.html() + '</li>';
 

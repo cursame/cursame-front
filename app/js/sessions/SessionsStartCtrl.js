@@ -4,9 +4,9 @@ define( function () {
     return function ( $scope, events, Sessions ) {
         $scope.login    = function () {
             Sessions.start( $scope.user );
-        }
+        };
 
-        $scope.$on( events.LOGIN_SUCCESS, function ( e, data ) {
+        $scope.$on( events.LOGIN_SUCCESS, function () {
             $scope.$emit( events.SYSTEM_MESSAGE, {
                 msg     : 'alerts.login.success',
                 type    : 'success'

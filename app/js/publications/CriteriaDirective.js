@@ -10,7 +10,7 @@ define( function () {
             },
             controller  : [ '$scope', function ( $scope ) {
                 if ( $scope.criterion == undefined ) {
-                    $scope.criterion    = Array();
+                    $scope.criterion    = [];
                 }
             }],
             link        : function ( scope ) {

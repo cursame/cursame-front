@@ -1,7 +1,7 @@
 'use strict';
 
 define( function ( require ) {
-    return function ( method, url, data ) {
+    return function ( method, url ) {
         var user            = $.queryParam( url, 'user' ),
             publications    = require( 'mocks/data/publications' ),
             response        = {
