@@ -4,7 +4,7 @@ define( function () {
     return function ( $scope, events, Publications ) {
         var type    = 'comment';
 
-        $scope.panel            = function ( e, id ) {
+        $scope.panel        = function ( e, id ) {
             var item    = $( e.currentTarget );
 
             type        = id;
@@ -15,7 +15,7 @@ define( function () {
             $( '.panel.active' ).removeClass( 'active' );
             $( '#panel-' + id ).addClass( 'active' );
         };
-        $scope.publish          = function () {
+        $scope.publish      = function () {
             var publication     = {
                 access  : 'public',
                 date    : new Date(),
@@ -32,7 +32,7 @@ define( function () {
             Publications.create( publication );
         };
 
-        $scope.publications     = Publications.query();
+        $scope.publications = Publications.query();
 
         $scope.$on( Publications.getEvent( 'CREATE' ), function ( $e, publication ) {
             $scope.$emit( events.SYSTEM_MESSAGE, {
@@ -42,6 +42,14 @@ define( function () {
             $scope.comment  = '';
 
             $scope.publications.unshift( publication );
+        });
+
+        $( '.datepicker' ).datepicker({
+            autoclose       : true,
+            format          : 'mm/dd/yyyy',
+            todayHighlight  : true
+        }).on( 'hide', function ( e ) {
+            e.stopPropagation();
         });
     };
 });
